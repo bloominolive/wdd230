@@ -23,3 +23,15 @@
     font-size: 29px;
     margin-top: 100px;
 }
+
+footer {
+    display: block;
+    height:8vh;
+    background-color: #d3e0f5;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer h3 {
+    text-align: left;
+}
