@@ -22,10 +22,12 @@
     font-family: Georgia;
     font-size: 29px;
     margin-top: 100px;
+    padding-left: 20px;
 }
 
 ul {
     font-size: 24px;
+    padding-left: 80px;
 }
 footer {
     display: block;
@@ -37,4 +39,47 @@ footer {
 
 footer h3 {
     text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+    .portal-title{
+        text-align: center;
+    }
+    .list {
+        text-align: center;
+        list-style-position: inside;
+    }
+    .ul {
+        display: inline-block;
+        align-content: center;
+    }
+    footer h3 {
+        text-align: center;
+    }
+    footer {
+        display: block;
+        height:3vh;
+        background-color: #d3e0f5;
+        margin-top: 200px;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .portal-title{
+        text-align: left;
+    }
+    .list {
+        text-align: left;
+        list-style-position: inside;
+    }
+    footer h3 {
+        text-align: left;
+    }
+    footer {
+        display: block;
+        height:8vh;
+        background-color: #d3e0f5;
+        margin-top: 200px;
+        padding: 20px;
+    }
 }
