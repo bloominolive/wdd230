@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rene Home Page Portal WDD 230</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="homeportal.js"></script>
 </head>
 <body>
     <main>
-    <div class="header">
-        <img alt="Rene" src="images/reneheadshot-150 x 225.jpg"/>
+    <header>
+        <img alt="Rene" src="images/reneheadshotsmall.jpg"/>
         <h1>Rene Olive</h1>         
-    </div>
+    </header>
     <div class="portal-title">
         <hr><h2>WDD 230: Assignment Portal</h2>
     </div>
@@ -21,7 +22,14 @@
     </ul></div>
     </main>
     <footer>
-        <h3>2023 | Rene Olive | WDD 230</h3>
+        <h3>&copy; <span id="curYr"></span> | Rene Olive | WDD 230</h3> <h4>Last Modified <span id="docLastUpdated"></span></h4>
     </footer>
+    <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        document.querySelector("#curYr").innerHTML = year;
+        let lastModified = new Date(document.lastModified);        
+        document.getElementById("docLastUpdated").innerHTML = lastModified
+    </script>
 </body>
 </html>
