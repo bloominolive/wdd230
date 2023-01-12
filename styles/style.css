@@ -32,7 +32,7 @@ header img {
 .portal-title {
     font-family: 'Yeseva One', cursive;
     font-size: 29px;
-    margin-top: 100px;
+    margin-top: 64px;
     padding-left: 20px;
     text-align: center;
 }
@@ -41,39 +41,20 @@ ul {
     font-size: 20px;
     padding-left: 80px;
     font-family: 'IBM Plex Serif', serif;
+    margin-bottom: 128px;
+    margin-top: 64px;
 }
 
 footer {
-    position:fixed;
     height:5rem;
     justify-content:center;
     background-color: #d3e0f5;
+    width: 900px;
 }
 
 footer p{
     font-family: 'IBM Plex Serif', serif;
     text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-    .list {
-        list-style-position: inside;
-    }
-    footer {
-        bottom: 0;
-    }
-}
-@media only screen and (min-width: 1000px) {
-    .portal-title{
-        text-align: left;
-    }
-    .list {
-        text-align: left;
-        list-style-position: inside;
-    }
-    footer {
-        width: 900px;
-        height:5rem;
-        background-color: #d3e0f5;
-    }
+    font-size: 16px;
+    padding-top: 8px;
 }

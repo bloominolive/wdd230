@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5em){
+    header {
+        height: auto;
+        margin-top: 40px;
+    }
+    header h1 {
+        font-size: 6em;
+        padding-top: 13rem;
+        
+    }
+    header img {
+        float: left;
+        padding-top: 4rem;
+    }
+}
