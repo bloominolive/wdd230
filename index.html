@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rene Home Page Portal WDD 230</title>
+    <title>WDD 230 - Assignment Portal | Rene Olive</title>
+    <meta name="description" content="Assignment portal for Rene Olive in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="homeportal.js"></script>
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nothing+You+Could+Do&family=Yeseva+One&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <main>
     <header>
-        <img alt="Rene" src="images/reneheadshotsmall.jpg"/>
+        <img alt="Rene" src="images/reneheadshotsmall.jpg">
         <h1>Rene Olive</h1>         
     </header>
     <div class="portal-title">
@@ -22,14 +29,9 @@
     </ul></div>
     </main>
     <footer>
-        <h3>&copy; <span id="curYr"></span> | Rene Olive | WDD 230</h3> <h4>Last Modified <span id="docLastUpdated"></span></h4>
+        <p><b>&copy; <span id="curYr"></span> | Rene Olive | WDD 230</b></p>
+        <p>Last Modified <span id="docLastUpdated"></span></p>
     </footer>
-    <script>
-        var date = new Date();
-        var year = date.getFullYear();
-        document.querySelector("#curYr").innerHTML = year;
-        let lastModified = new Date(document.lastModified);        
-        document.getElementById("docLastUpdated").innerHTML = lastModified
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
