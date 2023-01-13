@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em) and (max-width: 56em){
+    
+    .grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card3 {
+        grid-column: 1;
+        grid-column-end: 3;
+    }
+
+    img {
+        max-width: 350px;
+    }
+    
+    
+}

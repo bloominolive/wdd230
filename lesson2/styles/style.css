@@ -1,0 +1,76 @@
+html {
+    
+    margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+}
+
+
+header {
+    background-color: #d3e0f5;
+    overflow: hidden;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    color: rgb(24, 24, 24); 
+}
+
+header h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    color: rgb(24, 24, 24);
+}
+
+
+footer {
+    height:5rem;
+    justify-content:center;
+    background-color: #d3e0f5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-family: 'IBM Plex Serif', serif;
+    text-align: center;
+    font-size: 16px;
+}
+.white-space, .card2, .card3 {
+    background-color: rgb(250, 250, 241);
+    padding: 1rem;
+    height: 4rem;
+    justify-content: center;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 16px 16px 16px 50px;
+    display: grid;
+    gap: 1rem;   
+}
+
+.grid-header {
+    background-color: #6680a9;
+    color: rgb(245, 248, 249);
+    font-size: 20px;
+    font-family: 'IBM Plex Serif', serif;
+    padding: 8px 8px 8px 8px;
+}
+
+img {
+    padding: 12px;
+    max-width: 400px;
+}
+
+
+
+

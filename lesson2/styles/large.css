@@ -1,0 +1,23 @@
+@media only screen and (min-width: 56em){
+    header {
+        max-height: 250px;
+    }
+
+    
+
+    .grid{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .white-space {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+
+
+}
