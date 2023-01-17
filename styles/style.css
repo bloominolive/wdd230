@@ -15,7 +15,7 @@ header {
     background-color: #d3e0f5;
     margin-top: 70px;
     padding: 40px;
-    display: flex;
+    display: block;
 }
 
 header h1 {
