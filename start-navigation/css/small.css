@@ -60,7 +60,7 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(1) {
     display: none;
 }
-#hamburgerBtn span:nth-child(2) {
+#hamburgerBtn.open span:nth-child(2) {
     display: block;
 }
 
