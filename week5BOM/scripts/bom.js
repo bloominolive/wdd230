@@ -14,7 +14,7 @@ const listBtn = document.createElement('button');
 listItem.appendChild(listText);
 listText.textContent = myItem;
 listItem.appendChild(listBtn);
-listBtn.textContent = 'X';
+listBtn.textContent = '❌';
 list.appendChild(listItem);
 listBtn.addEventListener('click', () => {
 list.removeChild(listItem);
