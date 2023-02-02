@@ -1,4 +1,6 @@
-
+html {
+    max-width: 1200px;
+}
 header {
     display: flex;
     background-color: #054E8F;
@@ -97,45 +99,211 @@ nav ul.open {
     margin-left: 1rem;
 }
 
-
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "event hero spotlights"
-       "weather hero spotlights"
-       "join news spotlights";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 2rem;
     margin-top: 2rem;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Merriweather', serif;
     margin-left: 2rem;
     margin-right: 2rem;
+}
+.event {
+    grid-row:2/3;
+    position: relative;
+    background-image: linear-gradient(to bottom, blue 0%, blue 50%, yellow 50%, yellow 100%);
+    max-width: 100%;
+    min-height: 20vh;
+    max-height: 40vh;
+    text-align: center;
+}
+
+.grid-headers {
+    color: white;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+
+.event img {
+    max-width: 4em;
+    border-radius: 28px;
+    position: absolute;
+    left: 2rem;
+}
+
+.event-date {
+    color: white;
+    margin-top: 2rem;
+    font-family: "Merriweather", serif;
+    font-weight: 100;
+}
+
+.event-location {
+    color: #1D1D1D;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.event p{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.grid-buttons{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #1d1d1d;
+    background-color: rgba(180, 231, 231);
+    padding-top: .25em;
+    padding-bottom: .25em;
     
 }
-.box1 {
-    grid-area: event;
-    border: #054E8F solid;
-    background-color: #B4E7E7;
+
+.grid-buttons:hover {
+    background-color: white;
 }
-.box2 > hero {
-    grid-area: hero;   
+.hero {
+    grid-row: 1/2;
+    position: relative;
 }
 
-.box3 {
-    grid-area: spotlights;
-   
+.hero img {
+    max-width:100%;   
 }
-.box4 {
-    grid-area: weather;
-}
-.box5 {
-    grid-area: join;
-}
-.box6 {
-    grid-area: news;
+.welcome {
+    position: absolute;
+    max-width: 100%;
+    top: .25rem;
+    left: 2rem;
+    color: white;
+    text-shadow: #1D1D1D .5px .5px;
+    font-family: "Merriweather", serif;
 }
 
 
+.weather {
+    position: relative;
+    grid-row: 3/4;
+    max-width: 100%;
+    min-height: 20vh;
+    max-height: 40vh;
+    background-color: #054E8F;  
+}
+
+.grid-content {
+    max-width: 480px;
+}
+.weather img {
+    max-width: 8rem;
+    border-radius: 80px;
+    float: left;
+    margin-left: 8rem;
+}
+
+.right-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    color: white;
+    float: right;
+    margin-right: 4em;
+    line-height: 1px;
+    text-align: center;
+} 
+
+hr {
+    width: 80%;
+}
+.news {
+    grid-row: 4/5;
+    position: relative;
+    max-width: 100%;
+    min-height: 20vh;
+    max-height: 40vh;
+    background-color: #054E8F;
+}
+.news p {
+    color: white;
+    font-family: "Merriweather", serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.spotlights {
+    display: grid;
+    font-family: 'Merriweather', serif;
+    grid-row: 5/6;
+    position: relative;
+    max-width: 100%;
+    min-height: 60vh;
+    background-color: #054E8F;
+}
+
+.business {
+    border: #1D1D1D solid 1px;
+    text-align: center;
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 95%;
+    min-height: 10vh;
+    box-shadow: rgba(29, 29, 29, .8) 0px 5px 15px;
+    color: white;
+}
+
+
+.business1 {
+    margin-bottom: 0;
+}
+
+.bus-img {
+    max-width: 12rem;
+}
+
+.bus-quote {
+    font-family: "Roboto", sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.contact-info{
+    line-height: 1.75;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.contact-info a{
+    text-decoration: none;
+    color: #1d1d1d;
+    background-color: rgba(180, 231, 231);
+    margin-left: .25rem;
+    padding:.25rem;
+    border-radius: 10px;
+}
+
+.contact-info a:hover {
+    background-color: white;
+}
+
+
+.business3 {
+    display: none;
+}
+
+.join {
+    display: none;
+}
 
  footer {
     height: auto;

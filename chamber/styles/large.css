@@ -1,10 +1,44 @@
-@media only screen and (mid-width: 64rem) {
+@media only screen and (min-width: 64rem) {
 
-    nav ul li a {
-        padding: .5rem 1rem;
-    }
+nav ul li a {
+    padding: .5rem 1rem;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "events hero hero spotlights"
+    "weather hero hero spotlights"
+    "spotlights spotlights spotlights spotlights"
+    "join news news spotlights";
+    gap: 2rem;
+    margin-top: 2rem;
+    font-family: 'Merriweather', serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.event {
+    grid-area: events;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.spotlights {
+    grid-area: spotlights;
+}
+
+.weather {
+    grid-area: weather;
+}
+
+.join {
+    grid-area: join;
+}
+
+.news {
+    grid-area: news;
+}
     
-    
-    
-    
-    }
+}
