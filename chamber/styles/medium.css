@@ -40,7 +40,7 @@
  .news {
     grid-area: news;
     margin-bottom: 2rem;
-    min-height: 20vh;
+    min-height: 10vh;
    
 }
 
@@ -67,7 +67,7 @@
     display: block;
     position: relative;
     max-width: 100%;
-    min-height: 10vh;
+    min-height: 7vh;
     background-color: #054E8F;
 }
 
@@ -95,6 +95,8 @@
     text-align: center;
     position: absolute;
     top: 3rem;
+    left: 10rem;
+    right: 10rem;
 }
 .event {
     grid-area: events;
