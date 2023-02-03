@@ -23,6 +23,6 @@ document.getElementById("docLastUpdated").innerHTML = lastModified
 var today = new Date();
 var dayOfWeek = today.getDay();
 
-if (dayOfWeek == 1 || dayOfWeek == 5) {
+if (dayOfWeek == 1 || dayOfWeek == 2) {
   document.getElementById("meeting-banner").style.display = "block";
 }
