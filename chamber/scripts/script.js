@@ -1,7 +1,9 @@
-const datefield = document.getElementById('date');
+const datefieldUK = document.getElementById("date");
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle:"full"}).format(now);
-datefield.innerHTML = `<em>${fulldate} </em>`;
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+dateStyle: "full"
+}).format(now);
+datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
@@ -16,3 +18,11 @@ var year = date.getFullYear();
 document.querySelector("#curYr").innerHTML = year;
 let lastModified = new Date(document.lastModified);        
 document.getElementById("docLastUpdated").innerHTML = lastModified
+
+
+var today = new Date();
+var dayOfWeek = today.getDay();
+
+if (dayOfWeek == 1 || dayOfWeek == 5) {
+  document.getElementById("meeting-banner").style.display = "block";
+}

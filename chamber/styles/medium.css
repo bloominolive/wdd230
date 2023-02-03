@@ -1,4 +1,4 @@
-@media only screen and (min-width: 41rem) {
+@media only screen and (min-width: 41rem) and (max-width:64rem) {
 
     nav button {
         display: none;
@@ -33,14 +33,12 @@
 
 .hero {
     grid-area: hero;
-    min-height: 20vh;
-    
 }
 
  .news {
     grid-area: news;
-    margin-bottom: 2rem;
-    min-height: 10vh;
+    padding-bottom: 2rem;
+   
    
 }
 
@@ -48,7 +46,7 @@
     grid-area: spotlights; 
     grid-template-areas: "business1 business2";
     height: fit-content;
-    min-height: 20vh;
+    
 }
 
 
@@ -64,26 +62,22 @@
 
 .join {
     grid-area: join;
-    display: block;
-    position: relative;
-    max-width: 100%;
-    min-height: 20vh;
+    display: grid;
+    padding: 1rem;
     background-color: #054E8F;
 }
 
 .join a {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    left: 1rem;
     border-radius: 10px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     text-decoration: none;
     color: #1d1d1d;
     background-color: rgba(180, 231, 231);
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding: .5rem 3rem .5rem 3rem;
+    
 }
 
 .join a:hover {
@@ -93,37 +87,15 @@
 .join p {
     color: white;
     text-align: center;
-    position: absolute;
-    top: 3rem;
-    left: 10rem;
-    right: 10rem;
 }
 .event {
     grid-area: events;
-    min-height: 20vh;
-    max-height: 40vh;
-}
-
-.event img {
-    max-width: 6rem;
-    position: absolute;
-    top: 3rem;
-}
-
-
-.event-date {
-    font-size: 20px;
-    font-style: italic;
-}
-
-.event-location {
-    margin-top: 5rem;
+   
 }
 
 .weather {
     grid-area: weather;
-    min-height: 20vh;
-    max-height: 35vh;
+    
 } 
 
 .weather img {
