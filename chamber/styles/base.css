@@ -97,7 +97,11 @@ nav ul.open {
     margin-left: 1rem;
 }
 
-.meeting-banner {
+#meeting-banner[style="display:none;"] {
+    display: none;
+  }
+  
+#meeting-banner {
     background-color: rgba(180, 231, 231);
     margin-top: 1rem;
     font-size: 1.5rem;
