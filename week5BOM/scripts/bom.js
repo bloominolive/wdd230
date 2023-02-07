@@ -1,11 +1,15 @@
 
+
 const list = document.querySelector('ul');
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 
 button.addEventListener('click', () => {
 const myItem = input.value;
-input.value = '';
+if (myItem.trim() === '') {
+    return;
+  }
+  input.value = '';
 
 const listItem = document.createElement('li');
 const listText = document.createElement('span');
