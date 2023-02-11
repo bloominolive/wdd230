@@ -9,6 +9,8 @@ header {
 
 header picture {
     margin-left: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 li .socialicons {
@@ -381,7 +383,7 @@ footer img {
     /* margin-left: 1rem;
     margin-right: 1rem; */
     margin-top: .5rem;
-    max-height: 4rem;
+    /* max-height: 4rem; */
 }
 .footertext{
     display: flex;
