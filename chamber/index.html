@@ -17,7 +17,12 @@
 </head>
 <body>
     <header>
-        <picture><img src="images/orlando-city-logo.png" alt="logo" style="width: 10rem;"></picture>
+        <picture class="headlogo">
+            <source media="(max-width: 400px)" srcset="images/orlando-city-logo200.webp">
+            <source media="(max-width: 1028px)" srcset="images/orlando-city-logo300.webp">
+            <source media="(max-width: 1200px)" srcset="images/orlando-city-logo.webp">
+            <img src="images/orlando-city-logo.webp" alt="logo" style="width: 10rem;">
+        </picture>
         <section class="headings"><h1>Orlando Chamber of Commerce</h1> 
             <div class="date"><p><span id="date"></span></p></div>
         </section>
@@ -46,19 +51,32 @@
                 
             </div>
             <div class="hero">
-                <img src="images/orlando-downtown.jpg" alt="orlando downtown">
+                <picture >
+                    <source media="(max-width: 400px)" srcset="images/wdd230-org200.jpg">
+                    <source media="(max-width: 1000px)" srcset="images/wdd230-org500.jpg">
+                    <source media="(max-width: 1600px)" srcset="images/wdd230-org800.jpg">
+                    <img class="heropic" src="images/wdd230-org.jpg" alt="hero picture">
+                </picture>
+                <!-- changing for w6 assignment <img src="images/orlando-downtown.jpg" alt="orlando downtown"> -->
                 <h2 class="welcome">Welcome to Orlando</h2>
-                <a class="hero-button grid-buttons" href= "#">Join the Chamber</a>
+                <a class="hero-button" href= "#">Join the Chamber</a>
             </div>
             <div class="weather">
                 <h2 class="grid-headers">Weather</h2>
-                <div class="grid-content">
-                    <img src="images/sunshine.png" alt="weather">
-                    <section class="right-text">
-                        <h3>Sunny</h3>
-                        <hr>
-                        <h3>75°F</h3>
-                    </section>
+                <div class="weather-temp-pic">
+                    <picture class="sunshine">
+                        <source media="(max-width: 400px)" srcset="images/sunshine25.png">
+                        <source media="(max-width: 1028px)" srcset="images/sunshine50.png">
+                        <source media="(max-width: 1200px)" srcset="images/sunshine75.png">
+                        <img src="images/sunshine75.png" alt="sunshine">
+                    </picture>
+                    <h3><span id="temp">40</span>°F</h3>
+                </div>
+                <div class="weather-details">
+                    <h3 class="wh3">Sunny</h3>
+                    <hr>
+                    <div class="windspeed"> <span id="windspeed">20</span> mph </div>
+                    <div class="windchill"><span id="windchill">N/A</span></div>
                 </div>
             </div>
             <div class="news">
@@ -70,19 +88,34 @@
                 </div>
             <div class="spotlights">
                 <div class="business business1"><h2>Miscellaneous Market</h2>
-                    <img class="bus-img" src="images/misc-market.jpg" alt="miscellaneous market">
+                    <picture class="bus-img"> 
+                        <source media="(max-width: 400px)" srcset="images/misc-market50.jpg">
+                        <source media="(max-width: 1028px)" srcset="images/misc-market200.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/misc-market800.jpg">
+                        <img src="images/misc-market.jpg" alt="miscellaneous market">
+                    </picture>
                     <h3 class="bus-quote">"...a little trendy, a little sassy, a little earthy and organic..."</h3>
                     <hr>
                     <p class="contact-info">shop@miscmarketstore.com <br>407.408.7105 <a href="https://miscmarketstore.com/"><b> Website</b></a> </p>
                 </div>
                 <div class="business business2"><h2>Downtown Air and Heat</h2>
-                    <img class="bus-img" src="images/people-relaxing.jpg" alt="downtown air and heat">
+                    <picture class="bus-img">
+                        <source media="(max-width: 400px)" srcset="images/people-relaxing50.jpg">
+                        <source media="(max-width: 1028px)" srcset="images/people-relaxing200.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/people-relaxing800.jpg">
+                         <img src="images/people-relaxing.jpg" alt="downtown air and heat">
+                        </picture>
                     <h3 class="bus-quote">"...quality repair, installation, and maintenance services..."</h3>
                     <hr>
                     <p class="contact-info">fake-email@downtownair.com <br>407.965.3250  <a href="https://downtown-air.com/"><b> Website</b></a> </p>
                 </div>
                 <div class="business business3"><h2>A Land Remembered</h2>
-                    <img class="bus-img" src="images/land-remembered.jpg" alt="land remembered food">
+                    <picture class="bus-img">
+                        <source media="(max-width: 400px)" srcset="images/land-remembered50.jpg">
+                        <source media="(max-width: 1028px)" srcset="images/land-remembered200.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/land-remembered800.jpg">
+                        <img src="images/land-remembered.jpg" alt="land remembered food">
+                    </picture>
                     <h3 class="bus-quote">"...offerings as diverse as Florida's history..."</h3>
                     <hr>
                     <p class="contact-info">fake-email@land-remembered.com <br>407.996.9939 <a href="https://www.landrememberedrestaurant.com/"><b> Website</b></a> </p>
@@ -95,22 +128,34 @@
         </div>
     </main>
     <footer>
-       
-           <div class="footertext">
-            <img src="images/orlando-city-logo.png" alt="logo">
-            <section class="footerleft"><h2>Orlando Chamber of Commerce</h2>
-                <h4>400 South Orange  <br>
-                    Orlando, FL 32801</h4>
-            </section>
+        <div class="footertext">  
+            <picture class="footerlogo">
+                <source media="(max-width: 400px)" srcset="images/orlando-city-logo200.webp">
+                <source media="(max-width: 1028px)" srcset="images/orlando-city-logo300.webp">
+                <source media="(max-width: 1200px)" srcset="images/orlando-city-logo.webp">
+                <img src="images/orlando-city-logo.webp" alt="logo">
+            </picture>              
+                <section class="footerleft">
+                    <h2>Orlando Chamber of Commerce</h2>
+                    <h4>400 South Orange  <br>
+                    Orlando, FL 32801</h4>                 
+                </section>
             <section class="footerright">
                 <h4>info@orlandocc.org <br>
                     407.246.2121 <br>
-                    <a href="https://maps.google.com/?q=400%20South%20Orange%20Avenue%20%20Orlando,%20FL%2032801"><img src="images/mapsicon.png" alt="map icon" style="width: 2.5rem;">Map</a></h4>
+                    <a href="https://maps.google.com/?q=400%20South%20Orange%20Avenue%20%20Orlando,%20FL%2032801">
+                        <picture class="map-icon">
+                            <source media="(max-width: 400px)" srcset="images/mapsicon36.png">
+                            <source media="(max-width: 1028px)" srcset="images/mapsicon36.png">
+                            <source media="(max-width: 1200px)" srcset="images/mapsicon.png">
+                            <img src="images/mapsicon.png" alt="map icon" style="width: 2.5rem;">
+                        </picture>Map</a></h4>
             </section>
-            </div>
+        </div>
        <hr>
        <p>&copy; <span id="curYr"></span> Orlando Chamber | Rene Olive | WDD 230 | Last Modified <span id="docLastUpdated"></span></p>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
-@media only screen and (min-width: 64rem) {
-
+@media only screen and (min-width: 1024px) {
+.headings h1{
+    font-size: 2.5rem;
+}
     nav button {
         display: none;
     }
@@ -80,8 +82,8 @@ header {
 }
 
 .hero-button {
-    max-width: 12rem;
-    bottom: 5rem;
+    left: auto;
+    bottom: 2rem;
 }
 
 .spotlights {
@@ -92,6 +94,19 @@ header {
 .weather {
     grid-column: 1/2;
     grid-row: 2/3;
+}
+
+.weather .grid-headers {
+    margin: 2px;
+}
+.weather-temp-pic {
+    margin: 0;
+}
+.weather-details {
+    margin:0;
+}
+.wh3 {
+    margin-top: 0;
 }
 
 .join {
@@ -177,7 +192,31 @@ header {
     overflow: hidden;
 }
 
+.footertext {
+    display: flex;
+    flex-direction: row;
+    
+}
+footer img {
+    margin-top: -1.8rem;
+    margin-right: .8rem;
+}
+.footerleft {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 
+}
+.footerright {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    text-align: right;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    
+}
 
 
     
