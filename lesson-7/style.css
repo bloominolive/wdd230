@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: block;
+    text-align: center;
+    
+}
+
+.photos{
+    display: grid;
+    gap: 2rem;
+}
+
+img {
+    opacity: 1;
+    transition: opacity 2s;
+}
+  
+img[data-src] {
+    opacity: .5;
+    
+  }
+  
