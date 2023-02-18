@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDD 230 - Chamber of Commerce Assignment | Rene Olive</title>
+    <meta name="description" content="Assignment portal for Rene Olive in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100;400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <picture class="headlogo">
+            <source media="(max-width: 337px)" srcset="images/orlando-city-logo50.webp">
+            <source media="(max-width: 1028px)" srcset="images/orlando-city-logo100.webp">
+            <source media="(max-width: 1200px)" srcset="images/orlando-city-logo200.webp">
+            <img src="images/orlando-city-logo50.webp" alt="logo">
+        </picture>
+        <section class="headings"><h1>Orlando Chamber of Commerce</h1> 
+            <div class="date"><p><span id="date"></span></p></div>
+        </section>
+        
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="discover.html">Discover</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Contact</a></li> 
+                    <li class="socialicons"> <a href="#"><img src="images/facebook-icon.png" alt="facebook-logo" style="width: 2rem;"></a></li>
+                    <li class="socialicons"> <a href="#"><img src="images/instagram-icon.png" alt="instagram-logo" style="width: 2rem;"></a></li>                   
+                </ul>
+            </nav>
+    <main class="discover">
+        <div class="discover-wrapper">
+        <div id="meeting-banner" style="display:none;">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <div class="sidebar">
+                <div class="business"><h2>Science Center</h2>
+                    <picture class="bus-img"> 
+                        <source media="(max-width: 400px)" srcset="images/science-museum100.jpg">
+                        <source media="(max-width: 1028px)" srcset="images/science-museum200.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/science-museum200.jpg">
+                        <img data-src="images/science-museum200.jpg" src="images/placeholder.png" alt="science museum">                    
+                    </picture>
+                    <h3 class="bus-quote">Inspire Science Learning for Life!</h3>
+                    <hr>
+                    <p class="contact-info">gservices@osc.org <br>407.514.2000 <a href="https://www.osc.org/"><b> Website</b></a> </p>
+                </div>
+                <div class="business"><h2>Wetlands</h2>
+                    <picture class="bus-img"></picture>
+                        <source media="(max-width: 400px)" srcset="images/wetlands100.png">
+                        <source media="(max-width: 1028px)" srcset="images/wetlands200.png">
+                        <source media="(max-width: 1200px)" srcset="images/wetlands200.png">
+                        <img data-src="images/wetlands200.png" src="images/placeholder.png" alt="wetlands">                    
+                    </picture>
+                    <h3 class="bus-quote">Bird watching, hiking, and more!</h3>
+                    <hr>
+                    <p class="contact-info">orlandowetlandspark@orlando.gov <br>407.568.1706 <a href="https://www.orlando.gov/Parks-the-Environment/Directory/Wetlands-Park"><b> Website</b></a> </p>
+                </div>
+                <div class="business"><h2>Showcase of Citrus</h2>
+                    <picture class="bus-img"> 
+                        <source media="(max-width: 400px)" srcset="images/oranges100.jpg">
+                        <source media="(max-width: 1028px)" srcset="images/oranges200.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/oranges200.jpg">
+                        <img data-src="images/oranges200.jpg" src="images/placeholder.png" alt="oranges">                    
+                    </picture>
+                    <h3 class="bus-quote">Florida's Fresh Air Attraction</h3>
+                    <hr>
+                    <p class="contact-info">info@showcaseofcitrus.com <br>352.394.4377 <a href="https://showcaseofcitrus.com/"><b> Website</b></a> </p>
+                </div>
+                <div class="business"><h2>Lake Eola</h2>
+                    <picture class="bus-img"> 
+                        <source media="(max-width: 400px)" srcset="images/swan-lake-eola100.jpg">
+                        <source media="(max-width: 1028px)" srcset="images/swan-lake-eola200.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/swan-lake-eola200.jpg">
+                        <img data-src="images/swan-lake-eola200.jpg" src="images/placeholder.png" alt="swan boat lake eola">                    
+                    </picture>
+                    <h3 class="bus-quote">Swan Boats, Concerts, and More!</h3>
+                    <hr>
+                    <p class="contact-info">fakeemail@lake-eola.com <br>407.246.4484 <a href="https://www.orlando.gov/Parks-the-Environment/Directory/Lake-Eola-Park"><b> Website</b></a> </p>
+                </div>
+                <div class="business"><h2>Wekiwa Springs</h2>
+                    <picture class="bus-img"> 
+                        <source media="(max-width: 400px)" srcset="images/wekiva100.jpg">
+                        <source media="(max-width: 1028px)" srcset="images/wekiva200.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/wekiva200.jpg">
+                        <img data-src="images/wekiva200.jpg" src="images/placeholder.png"alt="swan boat lake eola">                    
+                    </picture>
+                    <h3 class="bus-quote">Emerald springs minutes from downtown!</h3>
+                    <hr>
+                    <p class="contact-info">fakeemail@wekiwasprings.com <br>407.553.4383 <a href="https://www.floridastateparks.org/parks-and-trails/wekiwa-springs-state-park"><b> Website</b></a> </p>
+                </div>
+            </div>
+            <div class="demo-grid ">
+                <div class="demo-content"><a href="https://datausa.io/profile/geo/orlando-fl#enrollments_diversity"><h2 class="grid-headers">Enrollments by Gender and Races</h2></a> 
+                    <p>In 2020 there were 49,139 students enrolled in Orlando, FL, 39% men and 61% women.
+                        By race, the largest number of students enrolled was concentrated in Hispanic or Latino
+                        with 18,839 records, of which 62% were women and 38% men.</p>
+                        <picture class="bus-img lazyload"> 
+                            <source media="(max-width: 400px)" srcset="images/enrollments200.png">
+                            <source media="(max-width: 1028px)" srcset="images/enrollments600.png">
+                            <source media="(max-width: 1200px)" srcset="images/enrollments600.png">
+                            <img data-src="images/enrollments400.png" src="images/placeholder.png" alt="enrollment chart">                    
+                        </picture>
+                </div>
+                
+                <div class="demo-content"><a href="https://datausa.io/profile/geo/orlando-fl#race_and_ethnicity"><h2 class="grid-headers">Race and Ethnicity</h2></a> 
+                    <p>In 2020, there were 1.54 times more White (Non-Hispanic) residents (103k people) in Orlando, FL than 
+                        any other race or ethnicity. There were 66.4k Black or African American (Non-Hispanic) and 61k White 
+                        (Hispanic) residents, the second and third most common ethnic groups.
+                        32.7% of the people in Orlando, FL are hispanic (93k people).                        
+                        The following chart shows the 7 races represented in Orlando, FL as a share of the total population.</p>
+                        <picture class="bus-img lazyload"> 
+                            <source media="(max-width: 400px)" srcset="images/ethnicity200.png">
+                            <source media="(max-width: 1028px)" srcset="images/ethnicity600.png">
+                            <source media="(max-width: 1200px)" srcset="images/ethnicity600.png">
+                            <img data-src="images/ethnicity400.png" src="images/placeholder.png" alt="ethnicity chart">                    
+                        </picture>
+                </div>
+                
+                <div class="demo-content"><a href="https://datausa.io/profile/geo/orlando-fl#occupations"><h2 class="grid-headers">Occupations</h2></a> 
+                    <p>From 2019 to 2020, employment in Orlando, FL grew at a rate of 1.61%, from 155k employees to 157k employees.
+                        The most common job groups, by number of people living in Orlando, FL, are Sales & Related Occupations (20,757 people), 
+                        Office & Administrative Support Occupations (17,588 people), and Management Occupations (17,271 people). This chart 
+                        illustrates the share breakdown of the primary jobs held by residents of Orlando, FL.</p>
+                        <picture class="bus-img lazyload"> 
+                            <source media="(max-width: 400px)" srcset="images/occupations200.png">
+                            <source media="(max-width: 1028px)" srcset="images/occupations600.png">
+                            <source media="(max-width: 1200px)" srcset="images/occupations600.png">
+                            <img data-src="images/occupations400.png" src="images/placeholder.png" alt="occupations chart">                    
+                        </picture>
+                </div>
+                
+                <div class="demo-content"><a href="https://datausa.io/profile/geo/orlando-fl#median_earnings"><h2 class="grid-headers">Median Earnings by Industry</h2></a> 
+                    <p>The industries with the best median earnings for men in 2020 are Information ($59,881), 
+                        Professional, Scientific, & Management, & Administrative & Waste Management Services ($52,576), 
+                        and Manufacturing ($52,212).
+                        The industries with the best median earnings for women in 2020 are Public Administration ($47,129), 
+                        Information ($42,008), and Finance & Insurance, & Real Estate & Rental & Leasing ($40,888).</p>
+                        <picture class="bus-img"> 
+                            <source media="(max-width: 400px)" srcset="images/earnings200.png">
+                            <source media="(max-width: 1028px)" srcset="images/earnings600.png">
+                            <source media="(max-width: 1200px)" srcset="images/earnings600.png">
+                            <img data-src="images/earnings400.png" src="images/placeholder.png" alt="earnings chart">                    
+                        </picture>
+                </div>
+                
+                <div class="demo-content"><a href="https://datausa.io/profile/geo/orlando-fl#property"><h2 class="grid-headers">Property Value</h2></a> 
+                    <p>The following chart display the households distributed between a series of property value buckets 
+                        compared to the national averages for each bucket. In Orlando, FL the largest share of households 
+                        have a property value in the $300k - $400k range.</p>
+                        <picture class="bus-img lazyload"> 
+                            <source media="(max-width: 400px)" srcset="images/property200.png">
+                            <source media="(max-width: 1028px)" srcset="images/property600.png">
+                            <source media="(max-width: 1200px)" srcset="images/property600.png">
+                            <img data-src="images/property400.png" src="images/placeholder.png" alt="property chart">                    
+                        </picture>
+                </div>
+            </div>
+
+            <div class="visits">It's been <span id="visits"></span> days since your last visit!</div>
+        </div>
+        </main>
+    <footer>
+        <div class="footertext">  
+            <picture class="footerlogo">
+                <source media="(max-width: 400px)" srcset="images/orlando-city-logo200.webp">
+                <source media="(max-width: 1028px)" srcset="images/orlando-city-logo100.webp">
+                <source media="(max-width: 1200px)" srcset="images/orlando-city-logo50.webp">
+                <img src="images/orlando-city-logo50.webp" alt="logo">
+            </picture>              
+                <section class="footerleft">
+                    <h2>Orlando Chamber of Commerce</h2>
+                    <h4>400 South Orange  <br>
+                    Orlando, FL 32801</h4>                 
+                </section>
+            <section class="footerright">
+                <h4>info@orlandocc.org <br>
+                    407.246.2121 <br>
+                    <a href="https://maps.google.com/?q=400%20South%20Orange%20Avenue%20%20Orlando,%20FL%2032801">
+                        <picture class="map-icon">
+                            <source media="(max-width: 400px)" srcset="images/mapsicon36.png">
+                            <source media="(max-width: 1028px)" srcset="images/mapsicon36.png">
+                            <source media="(max-width: 1200px)" srcset="images/mapsicon.png">
+                            <img src="images/mapsicon.png" alt="map icon" style="width: 2.5rem;">
+                        </picture>Map</a></h4>
+            </section>
+        </div>
+       <hr>
+       <p>&copy; <span id="curYr"></span> Orlando Chamber | Rene Olive | WDD 230 | Last Modified <span id="docLastUpdated"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+    </body>
+</html>

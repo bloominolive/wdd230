@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     background-color: #054E8F;
@@ -61,6 +62,7 @@ nav {
     max-width: 100%;
     margin: 0 auto;
     margin-top: .5rem;
+    margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
    
 }
@@ -302,7 +304,7 @@ hr {
     margin-right: 1rem;
 }
 
-.spotlights {
+.grid-in-grid {
     display: grid;
     font-family: 'Merriweather', serif;
     grid-row: 5/6;
@@ -427,3 +429,82 @@ footer p {
 hr {
     opacity: .6;
 }
+
+/* Discover Page */
+
+.discover .sidebar {
+    grid-area: sidebar;
+    float: left;
+    font-size: 1em;
+    display: grid;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    padding-bottom: .5rem;
+    background-color: #054E8F;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.discover .business {
+    font-size: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
+.discover .business a {
+    padding: .1rem;
+}
+
+.discover .demo-grid {
+    grid-area: demo;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0rem 1rem 0 1rem;
+    color: #fff;
+    text-align: center;
+   
+    
+}
+
+.demo-content {
+    padding: .5rem;
+    background-color: #054E8F;
+    border: #1D1D1D solid 1px;
+    
+
+}
+
+.demo-grid a {
+    text-decoration: none;
+}
+
+.demo-content picture {
+    max-width: 100%;
+}
+
+.demo-content img {
+    max-width: 100%;
+}
+
+img {
+    opacity: 1;
+    transition: opacity 2s;
+}
+  
+img[data-src] {
+    opacity: .5;
+  }
+
+  @media screen and (max-width: 500px){
+
+  
+.discover-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+
+
+

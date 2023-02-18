@@ -43,7 +43,7 @@ header{
    
 }
 
-.spotlights {
+.grid-in-grid {
     grid-area: spotlights; 
     grid-template-areas: "business1 business2";
     height: fit-content;
@@ -109,6 +109,12 @@ header{
     margin-left: 2rem;
     margin-right: 3rem;
 } 
+.bus-img {
+    transition: all .2s ease-in-out;
+}
+.bus-img:hover {
+    transform: scale(1.1);
+}
 
 .footertext {
     display: flex;
@@ -135,7 +141,6 @@ footer img {
     margin-right: 2rem;
     
 }
-
 
 }
     
