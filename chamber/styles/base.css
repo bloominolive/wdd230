@@ -504,6 +504,12 @@ img[data-src] {
 }
 }
 
+.visits {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 
 
 
