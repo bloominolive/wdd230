@@ -42,12 +42,12 @@ if (!lastVisit) {
   localStorage.setItem('lastVisit', currentDate.toString());
 }
 
-const images = document.querySelectorAll("[data-src]");
+const images = document.querySelectorAll("[data-srcset]");
 
 function preloadImage(image) {
-    image.setAttribute("src", image.getAttribute("data-src"));
+    image.setAttribute("srcset", image.getAttribute("data-srcset"));
     image.onload = () => {
-      image.removeAttribute("data-src");
+      image.removeAttribute("data-srcset");
     };
 }
 
@@ -68,7 +68,8 @@ if ('IntersectionObserver' in window) {
     images.forEach(image => {
         imgObserver.observe(image);
     });
-}else {
+}
+else {
     images.forEach(image => {
         preloadImage(image);
     });
