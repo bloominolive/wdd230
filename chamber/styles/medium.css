@@ -1,4 +1,4 @@
-@media only screen and (min-width: 41rem) and (max-width:1023px) {
+@media only screen and (min-width: 656px) and (max-width:1023px) {
 header{
     display: flex;
     flex-direction: row;
@@ -109,10 +109,8 @@ header{
     margin-left: 2rem;
     margin-right: 3rem;
 } 
-.bus-img {
-    transition: all .2s ease-in-out;
-}
-.bus-img:hover {
+
+img:hover {
     transform: scale(1.1);
 }
 

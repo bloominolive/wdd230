@@ -510,6 +510,9 @@ img[data-src] {
     margin-top: 2rem;
 }
 
+img:hover {
+    transform: none;
+}
 
 
 
