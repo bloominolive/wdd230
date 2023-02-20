@@ -14,6 +14,9 @@ header picture {
     margin-bottom: .5rem;
 }
 
+header .headlogo img {
+    border-radius: 100px;
+}
 li .socialicons {
     border-left: none;
     border-right: none;
@@ -122,6 +125,11 @@ nav ul.open {
     margin-left: 1rem;
 }
 
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+
 #meeting-banner[style="display:none;"] {
     display: none;
   }
@@ -221,9 +229,11 @@ nav ul.open {
 .heropic {
     display: block;
     width: 98%;
-    margin-left: .3rem;
-    margin-right: .3rem;
+    margin: .5rem auto .5rem auto;
+    max-width: 800px;
+    pointer-events: none;
 }
+
 /*  changing for w6 assignment .hero img {
     max-width:100%;   
 } */
@@ -249,6 +259,7 @@ nav ul.open {
 
 .sunshine img {    
     border-radius: 80px;
+    pointer-events: none;
 }
 
 .weather-temp-pic {
@@ -391,7 +402,8 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    margin: auto;
+    max-width: 1600px;
     
 }
 .footerleft {
