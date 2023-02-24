@@ -75,3 +75,8 @@ else {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    var hiddenField = document.getElementById("formDate");
+    hiddenField.value = new Date().toISOString();
+  });
+
