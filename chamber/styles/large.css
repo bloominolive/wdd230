@@ -46,6 +46,7 @@ header {
     font-family: 'Merriweather', serif;
     margin-left: 2rem;
     margin-right: 2rem;
+    max-width: 1200px;
 }
 
 .event {
@@ -75,7 +76,7 @@ header {
 
 .hero img {
     height: 400px;
-    width: 100%;
+    max-width: 800px;
     margin-left: .25rem;
     margin-top: .25rem;
     margin-right: .25rem;
@@ -220,4 +221,44 @@ footer img {
 img:hover {
     transform: scale(1.1);
 }   
+
+/* Directory Page */
+
+.directory-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.directory-grid section{
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.directory-grid img {
+    max-height: 4rem;
+}
+.directory-grid img:hover {
+    transform: none;
+}
+.list section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+.list span {
+    font-size: 1rem;
+  }
+
+.list section img {
+    display: block;
+    max-width: 4rem;
+  }
+
+.list br {
+    display: none;
+}
+
 }

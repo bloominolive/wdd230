@@ -140,6 +140,33 @@ footer img {
     
 }
 
+/* Directory Page */
+.directory-grid section {
+    max-width: 800px;
+}
+
+.directory-grid img:hover {
+    transform: none;
+}
+.list section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+.list section img {
+    display: block;
+    max-width: 6rem;
+    height: auto;
+    margin: auto;
+ }
+
+ .list br {
+    display: none;
+ }
+
+
 }
     
     
