@@ -221,6 +221,36 @@ footer img {
 img:hover {
     transform: scale(1.1);
 }   
+/* Discover Page */
+
+.discover .demo-grid {
+    max-width: 1200px;
+}
+
+.discover .sidebar {
+    min-width: 300px;
+    
+}
+
+.discover .business {
+    padding-bottom: 2.8rem;
+    
+}
+
+.discover .sidebar h2 {
+    font-size: 1.3rem;
+}
+
+.discover .business p {
+    font-size: .8rem;
+}
+
+.discover .bus-quote {
+    font-size: .9rem;
+}
+
+
+
 
 /* Directory Page */
 

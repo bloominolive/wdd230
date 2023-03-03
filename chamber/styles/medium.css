@@ -140,6 +140,26 @@ footer img {
     
 }
 
+/* Discover Page */
+
+.discover .business {
+    padding-bottom: 2rem;
+    
+}
+
+.discover .sidebar h2 {
+    font-size: 1.3rem;
+}
+
+.discover .business p {
+    font-size: .8rem;
+}
+
+.discover .bus-quote {
+    font-size: .9rem;
+}
+
+
 /* Directory Page */
 .directory-grid section {
     max-width: 800px;

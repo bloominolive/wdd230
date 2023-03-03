@@ -465,13 +465,25 @@ hr {
 
 .discover .business {
     font-size: .5rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding: 0 .5rem .5rem .5rem;
+}
+
+.discover .sidebar h2 {
+    font-size: 1.2rem;
+}
+
+.discover .business p {
+    font-size: .8rem;
+    line-height: 1.6rem;
+}
+
+.discover .bus-quote {
+    font-size: .7rem;
 }
 
 
 .discover .business a {
-    padding: .1rem;
+    padding: .2rem;
 }
 
 .discover .demo-grid {
