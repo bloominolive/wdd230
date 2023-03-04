@@ -163,6 +163,11 @@ footer img {
 /* Directory Page */
 .directory-grid section {
     max-width: 800px;
+    box-shadow: rgba(29, 29, 29, .8) 6px 10px 15px;
+}
+
+.directory-grid section:hover {
+    transform: scale(1.1);
 }
 
 .directory-grid img:hover {

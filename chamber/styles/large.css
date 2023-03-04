@@ -258,18 +258,29 @@ img:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    
 }
 
 .directory-grid section{
     height: 250px;
     align-items: center;
     justify-content: center;
+    box-shadow: rgba(29, 29, 29, .8) 6px 10px 15px;
+}
+
+.directory-grid section:hover {
+    transform: scale(1.1);
 }
 .directory-grid img {
     max-height: 4rem;
 }
 .directory-grid img:hover {
     transform: none;
+}
+
+.list {
+    box-shadow: rgba(29, 29, 29, .8) 0px 5px 15px;
 }
 .list section {
     display: grid;

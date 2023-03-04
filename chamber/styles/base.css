@@ -649,6 +649,7 @@ th, td {
     flex-direction: column;
     align-items: center;
     color: white;
+    box-shadow: rgba(29, 29, 29, .8) 6px 10px 15px;
 }
 
 .directory-grid a {
@@ -700,11 +701,16 @@ th, td {
     text-align: center;
     line-height: 1.6rem;
     color: #1D1D1D;
+    box-shadow: rgba(29, 29, 29, .8) 0px 5px 15px;
+    max-width: 98%;
+    margin: auto;
+
 }
 
 .list section {
 	margin: 0;
 	padding: 1rem;
+    
 }
 
 .list section img {
