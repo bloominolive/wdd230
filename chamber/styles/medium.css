@@ -67,6 +67,7 @@ header{
     display: grid;
     padding: 1rem;
     background-color: #054E8F;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
 
 .join a {
@@ -79,6 +80,7 @@ header{
     color: #1d1d1d;
     background-color: rgba(180, 231, 231);
     padding: .5rem 3rem .5rem 3rem;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
     
 }
 

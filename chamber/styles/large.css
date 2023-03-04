@@ -116,6 +116,7 @@ header {
     display: grid;
     padding: 1rem;
     background-color: #054E8F;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
 .join a {
     border-radius: 10px;
@@ -127,6 +128,7 @@ header {
     color: #1d1d1d;
     background-color: rgba(180, 231, 231);
     padding: .5rem 3rem .5rem 3rem;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
     
 }
 
@@ -151,12 +153,11 @@ header {
 }
 .business1 {
     grid-row:1/2;
-    margin: 0 auto;
-    margin-top: .5rem;
+    margin: .5rem auto .5rem auto;
 }
 .business2 {
     grid-row: 2/3;
-    margin: 0 auto;
+    margin: auto;
 }
 .business3{
     grid-row: 3/4;
@@ -166,15 +167,20 @@ header {
 
 .business h2 {
     font-size: 1rem;
+    margin: .3rem;
+}
+.business hr {
+    margin: 0 auto 0 auto;
 }
 .business img {
     max-width: 6rem;
 }
 .bus-quote {
-    font-size: .5rem;
+    font-size: .8rem;
+    margin: 0 .3rem 0 .3rem;
 }
 .contact-info {
-    font-size: .4rem;
+    font-size: .6rem;
 }
 .contact-info a {
     padding-top: 2px;

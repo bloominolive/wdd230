@@ -172,6 +172,7 @@ main {
     text-align: center;
     color: white;
     padding-bottom: 3rem;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
 
 .event h3 {
@@ -207,6 +208,7 @@ main {
     background-color: rgba(180, 231, 231);
     padding-top: .25em;
     padding-bottom: .25em;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
     
 }
 
@@ -232,6 +234,7 @@ main {
     grid-row: 1/2;
     position: relative;
     background-color: #054E8F;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
 .heropic {
     display: block;
@@ -261,6 +264,7 @@ main {
     background-color: #054E8F; 
     padding-bottom: 3rem; 
     color: white;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
     
 
@@ -314,6 +318,7 @@ hr {
     max-width: 100%;
     padding-bottom: 1rem;
     background-color: #054E8F;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
 .news p {
     color: white;
@@ -330,6 +335,7 @@ hr {
     max-width: 100%;
     padding-bottom: .5rem;
     background-color: #054E8F;
+    box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
 
 .business {
