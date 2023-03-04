@@ -409,7 +409,7 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin: auto 1rem auto 1rem;
     max-width: 1600px;
     
 }
@@ -425,10 +425,6 @@ footer img {
     margin-top: 0;
     font-style: italic;
 }
-
-/* .footerright {
-    margin-right: 1rem;
-} */
 
 .footerright a {
     color: white;
