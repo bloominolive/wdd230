@@ -41,9 +41,7 @@ img {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(1fr);
-  max-width: 40%;
-  margin: auto; 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 
