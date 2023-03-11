@@ -12,13 +12,6 @@ nav ul#primaryNav {
 
 }
 
-nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-
-}
-
 nav ul#primaryNav {
     display: flex;
     justify-content: center;      
@@ -26,11 +19,12 @@ nav ul#primaryNav {
 }
 
 nav ul li a {
-    padding: .5rem 1rem;
-    border: none;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: none;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
 
+#primarynav .socialicons {
+    padding-top: 0;
 }
 
 header {

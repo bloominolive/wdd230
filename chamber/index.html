@@ -66,19 +66,14 @@
             <div class="weather">
                 <h2 class="grid-headers">Weather</h2>
                 <div class="weather-temp-pic">
-                    <picture class="sunshine">
-                        <source media="(max-width: 400px)" srcset="images/sunshine-25.webp">
-                        <source media="(max-width: 1028px)" srcset="images/sunshine-50.webp">
-                        <source media="(max-width: 1200px)" srcset="images/sunshine-75.webp">
-                        <img src="images/sunshine-75.webp" alt="sunshine">
-                    </picture>
+                    <div class="sunshine"><img id="weather-icon"></div>
                     <h3><span id="current-temp"></span>°F</h3>
                 </div>
                 <div class="weather-details">
-                    <h3 class="wh3">Sunny</h3>
+                    <h3 class="wh3"><span id="weather-desc"></span></h3>
                     <hr>
                     <div class="windspeed"> Windspeed: <span id="windspeed-value"></span></div>
-                    <div class="windchill">Windchill: <span id="windchill">N/A</span></div>
+                    <div class="windchill">Windchill: <span id="windchill-value">N/A</span></div>
                 </div>
             </div>
             <div class="news">
@@ -126,7 +121,8 @@
             <div class="join"> 
                 <a href="join.html">Join Us!</a> <br>
                 <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-            </div>            
+            </div>  
+            <!-- <div class="visits">It's been <span id="visits"></span> days since your last visit!</div> -->
         </div>
     </main>
     <footer>
@@ -158,6 +154,6 @@
        <p>&copy; <span id="curYr"></span> Orlando Chamber | Rene Olive | WDD 230 | Last Modified <span id="docLastUpdated"></span></p>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
