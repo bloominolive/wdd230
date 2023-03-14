@@ -621,7 +621,10 @@ form label.top input:required {
 form label.top input:required:valid {
     border-bottom: darkgreen solid 2px;
 }
-table {
+.membership-level{
+    
+}
+.membership-level table {
 	border-collapse: collapse;
     margin-top: 1rem;
     margin-bottom: 1rem;
