@@ -729,4 +729,65 @@ th, td {
 	background-color: #B5E8E8;
 }
 
+/** Contact Page **/
 
+.contact-picture {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-picture img {
+    box-shadow: rgba(29, 29, 29, .8) 0px 5px 15px;
+}
+
+.contact-form legend {
+    margin-bottom: .5rem;
+}
+.contact-form {
+    width: 90%;
+    max-width: 500px;
+    margin: 1rem auto auto auto;
+    
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 80%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    
+  }
+  
+  .contact-form input {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form textarea {
+    height: 170px;
+  }
+  
+  .contact-form .submitBtn {
+    display: block;
+    margin: .8rem;
+    padding: 10px;
+  }
+
+  .visit-info{
+    text-align: center;
+  }
+  .visit-divider {
+    width: 40%;
+  }
+  

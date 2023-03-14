@@ -33,81 +33,62 @@
                 <ul id="primaryNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="contact.html">Contact</a></li> 
+                    <li class="active"><a href="contact.html">Contact</a></li> 
                     <li class="socialicons"> <a href="#"><img src="images/facebook-icon.png" alt="facebook-logo" style="width: 2rem;"></a></li>
                     <li class="socialicons"> <a href="#"><img src="images/instagram-icon.png" alt="instagram-logo" style="width: 2rem;"></a></li>                   
                 </ul>
     </nav>
-    <main class="join-page">
-        <h1 class="page-title">Join the Chamber</h1>
-        <form method="get" action="thanks.html">
-        <fieldset>
-            <legend>Applicant Information</legend>
-            <label class="top">Business Name* <input type="text" name="bname" required></label>
-            <label class="top">Business Position<input type="text" name="title" pattern="^(?=.*[a-zA-Z])[a-zA-Z\s\-]{7,}$"></label>
-            <label class="top">Cell Phone Number*<input type="tel" name="phone" placeholder="1235551234" required></label>
-            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            <label class="top">First Name* <input type="text" name="fname" required></label>
-            <label class="top">Last Name* <input type="text" name="lname" required></label>                     
-        </fieldset>
-        <fieldset>
-            <legend>Membership Level</legend>
-            <table>
-                <thead>
-                <tr>
-                    <th colspan="5" scope="colgroup" class="choose">Choose Your Level</th>
-                </tr>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Cost (yearly)</th>
-                    <th scope="col">Trainings</th>
-                    <th scope="col">Advertising</th>
-                    <th scope="col">Event Discounts</th>                    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><label class="sbs"><input type="checkbox" name="non-profit" value="yes"> NP (non-profit)</label></td>
-                    <td>Free</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td><label class="sbs"><input type="checkbox" name="bronze" value="yes"> Bronze</label></td>
-                    <td>$119.99</td>
-                    <td>✔️</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                </tr>
-                <tr>
-                    <td><label class="sbs"><input type="checkbox" name="silver" value="yes"> Silver</label></td>
-                    <td>$149.99</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>❌</td>
-                </tr>
-                <tr>
-                    <td><label class="sbs"><input type="checkbox" name="gold" value="yes"> Gold</label></td>
-                    <td>$169.99</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-            </tbody>
-            </table>
-        </fieldset>
-        <fieldset>
-            <legend>Business Description</legend>
-            <label class="top">Description</label>          
-                <textarea class="textarea" name="bdescription" rows="4" cols="50">Please enter your business description.</textarea> 
-        </fieldset>        
-        <input type="submit" value="Join Now" class="submitBtn">
-        <input type="hidden" name="formDate" id="formDate" value="">
-        </form>
-       
+    <main class="contact-page">
+        <h1 class="page-title">Contact The Chamber</h1>
+        <div class="contact-form-pic">
+            <div class="contact-picture">
+                <picture>
+                    <source media="(max-width: 574px)" srcset="images/contact-250.webp">
+                    <source media="(min-width: 575px) and (max-width: 1028px)" srcset="images/contact-350.webp">
+                    <source media="(max-width: 1200px)" srcset="images/contact-350.webp">
+                    <img class="contactpic" src="images/contact-350.webp" alt="contact picture">
+                </picture>
+            </div>
+            <div class="form-container">
+                <form class="contact-form" method="get" action="thanks-contact.html">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label class="top">Phone Number<input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required></label>    
+                        <label class="top">Message</label>          
+                            <textarea class="textarea" name="bdescription">Please enter your questions or comments here.</textarea> 
+                            <input type="submit" value="Send Message" class="submitBtn">
+                            <input type="hidden" name="formDate" id="formDate" value="">                 
+                    </fieldset>                    
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="visit-info">
+            <div class="visit-us">
+                <h2>Visit Us</h2>
+                <p class="visit-address">Orlando Chamber of Commerce<br>
+                400 South Orange<br>
+                Orlando, FL 32801</p>
+                <p class="visit-contact">info@orlandocc.org<br>407.246.2121</p>
+                <p class="visit-hours">Monday-Friday 9am-5pm</p>
+            </div>
+            <div class="vertical-divider"></div>
+                <hr class="visit-divider">
+                <div class="who-to-contact">
+                <h2>Who to Contact</h2>
+                <div class="who-to-contact-content">
+                    <p><b>Joe Orlando</b><br>President<br>407.555.5555 ext.123</p>
+                    <p><b>Jane Orange</b><br>Administrative Assistant<br>407.555.5555 ext.456</p>
+                    <p><b>Jack Florida</b><br>Membership Director<br>407.555.5555 ext.789</p>
+                    <p><b>Jenna Gator</b><br>Events Coordinator<br>407.555.5555 ext.001</p>
+                </div>
+            </div>
+        </div>
         </main>
     <footer>
         <div class="footertext">  
