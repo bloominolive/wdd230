@@ -294,6 +294,10 @@ main {
     justify-content: center;
 }
 
+.windchill, .windspeed {
+    line-height: 1.5rem;
+}
+
 .weather-details h3 {
     margin-bottom: 0;
 }
