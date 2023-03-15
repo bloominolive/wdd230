@@ -195,6 +195,7 @@ main {
     margin-right: 1rem;
     font-size: 24px;
     margin-bottom: 0;
+    
 }
 
 .grid-buttons{
@@ -342,12 +343,7 @@ hr {
     border: #1D1D1D solid 1px;
     text-align: center;
     position: relative;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     max-width: 95%;
-    min-height: 10vh;
     box-shadow: rgba(29, 29, 29, .8) 0px 5px 15px;
     color: white;
 }
@@ -363,10 +359,8 @@ hr {
 
 .bus-quote {
     font-family: "Roboto", sans-serif;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 0;
     line-height: 1.5;
+    text-align: center;
 }
 
 .contact-info{
