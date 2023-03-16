@@ -242,7 +242,6 @@ main {
     width: 98%;
     margin: .5rem auto .5rem auto;
     max-width: 800px;
-    pointer-events: none;
 }
 
 /*  changing for w6 assignment .hero img {
@@ -271,7 +270,6 @@ main {
 
 .sunshine img {    
     border-radius: 80px;
-    pointer-events: none;
 }
 
 .weather-temp-pic {
@@ -619,9 +617,6 @@ form label.top input:required {
 form label.top input:required:valid {
     border-bottom: darkgreen solid 2px;
 }
-.membership-level{
-    
-}
 .membership-level table {
 	border-collapse: collapse;
     margin-top: 1rem;
@@ -634,7 +629,7 @@ th, td {
 .choose {
 	background-color: rgba(180, 231, 231,.2);
 	font-size: 1.2rem;
-    padding: 1rem auto 1rem auto;
+    padding: .5rem;
     color: #1D1D1D;
     font-family: "Merriweather", serif;
 }
