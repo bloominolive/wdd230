@@ -1,11 +1,11 @@
-
+// Get date for header
 const datefieldUK = document.getElementById("date");
 const now = new Date();
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 dateStyle: "full"
 }).format(now);
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
-
+// Hamburger Nav function 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -14,13 +14,14 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
 
+//Document last updated for footer
 var date = new Date();
 var year = date.getFullYear();
 document.querySelector("#curYr").innerHTML = year;
 let lastModified = new Date(document.lastModified);        
 document.getElementById("docLastUpdated").innerHTML = lastModified
 
-
+// Get date for displaying meeting banner at top of each page
 var today = new Date();
 var dayOfWeek = today.getDay();
 
@@ -28,20 +29,7 @@ if (dayOfWeek == 1 || dayOfWeek == 2) {
   document.getElementById("meeting-banner").style.display = "block";
 }
 
-
-
-const currentDate = new Date();
-const lastVisit = localStorage.getItem('lastVisit');
-if (!lastVisit) {
-  localStorage.setItem('lastVisit', currentDate.toString());
-} else {
-  const lastVisitDate = new Date(lastVisit);
-  const timeDiff = currentDate.getTime() - lastVisitDate.getTime();
-  const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
-  document.getElementById("visits").innerHTML = `<em> ${daysDiff} </em>`;
-  localStorage.setItem('lastVisit', currentDate.toString());
-}
-
+//Lazy Loading
 const images = document.querySelectorAll("[data-srcset]");
 
 function preloadImage(image) {
@@ -75,15 +63,7 @@ else {
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var hiddenField = document.getElementById("formDate");
-    if (hiddenField) {
-      hiddenField.value = new Date().toISOString();
-    } else {
-      console.log("Could not find element with id 'formDate'");
-    }
-  });
+
+
+
   
-
-
-

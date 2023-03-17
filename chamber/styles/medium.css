@@ -33,6 +33,10 @@ header{
     align-self: center;
 }
 
+.hero img {
+    min-width: 98%
+}
+
 .hero-button {
     max-width: 12rem;
 }
@@ -47,6 +51,7 @@ header{
     grid-area: spotlights; 
     grid-template-areas: "business1 business2";
     height: fit-content;
+    padding: 1rem .3rem 1rem .3rem;
     
 }
 

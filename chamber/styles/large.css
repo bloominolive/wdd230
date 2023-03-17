@@ -74,6 +74,10 @@ header {
     margin-right: .25rem;
 }
 
+.hero img:hover {
+    transform: none;
+}
+
 .hero-button {
     left: auto;
     bottom: 2rem;
@@ -142,14 +146,15 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 200px 200px;
     grid-row-gap: 8px;
+    padding-right: .2rem;
 }
 .business1 {
     grid-row:1/2;
-    margin: .5rem auto .5rem auto;
+    margin-top: -.5rem;
 }
 .business2 {
     grid-row: 2/3;
-    margin: auto;
+    margin-bottom: .7rem;
 }
 .business3{
     grid-row: 3/4;

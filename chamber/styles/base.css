@@ -328,15 +328,25 @@ hr {
     font-family: "Merriweather", serif;
     margin-left: 1rem;
     margin-right: 1rem;
+    line-height: 28px;
+}
+.news p a{
+    color: white;
+    font-style: italic;
+}
+
+.news p a:hover {
+    color: #1D1D1D;
+    background-color: #B5E8E8;
+    padding: .3rem;
+    border-radius: 10px;
 }
 
 .grid-in-grid {
-    display: grid;
     font-family: 'Merriweather', serif;
-    grid-row: 5/6;
-    position: relative;
+    grid-row: 5/6;    
     max-width: 100%;
-    padding-bottom: .5rem;
+    padding: 1rem .3rem 1rem .3rem;
     background-color: #054E8F;
     box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
 }
@@ -344,19 +354,20 @@ hr {
 .business {
     border: #1D1D1D solid 1px;
     text-align: center;
-    position: relative;
+    margin: auto;
     max-width: 95%;
     box-shadow: rgba(29, 29, 29, .8) 0px 5px 15px;
     color: white;
 }
-
-
 .business1 {
-    margin-bottom: 0;
+    margin-bottom: .7rem;
 }
 
-.bus-img {
+.bus-logo {
     max-width: 12rem;
+    max-height: 4rem;
+    background-color: white;
+    padding: .5rem;
 }
 
 .bus-quote {
