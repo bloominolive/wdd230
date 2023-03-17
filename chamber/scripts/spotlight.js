@@ -28,6 +28,7 @@ const displayData = (businesses) => {
     <picture class="bus-img"> 
     <img class="bus-logo" src="${business.logo}" alt="${business.name} logo">
     </picture>
+    <p class="bus-quote">${business.busQuote}</p>
     <hr>
     <p class="contact-info">${business.address}<br>${business.phoneNumber} <a href="${business.website}"><b>Website</b></a></p>`;
   cards.appendChild(businessDiv);    

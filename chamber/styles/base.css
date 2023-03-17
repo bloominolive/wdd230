@@ -365,15 +365,18 @@ hr {
 
 .bus-logo {
     max-width: 12rem;
-    max-height: 4rem;
+    max-height: 3rem;
     background-color: white;
     padding: .5rem;
 }
 
 .bus-quote {
     font-family: "Roboto", sans-serif;
-    line-height: 1.5;
+    line-height: 1.3;
     text-align: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: .2rem;
 }
 
 .contact-info{
