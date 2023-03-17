@@ -7,7 +7,7 @@
             "website": "https://miscmarketstore.com/",
             "membershipLevel": "Gold",
             "busQuote": "Abstract jewelry, organic botanicals, and other Miscellaneous things!",
-            "logo": "https://miscmarketstore.com/wp-content/uploads/2019/04/misclogomain.png"
+            "logo": "images/misclogo.webp"
         },
         {
             "name": "Downtown Air and Heat",
@@ -16,7 +16,7 @@
             "website": "https://downtown-air.com/",
             "busQuote": "Top-quality, same-day service at an affordable price.",
             "membershipLevel": "Bronze",
-            "logo": "https://downtown-air.com/assets/templates/main/images/logo.png"
+            "logo": "images/downtownairlogo.webp"
         },
         {
             "name": "A Land Remembered",
@@ -25,7 +25,7 @@
             "website": "https://www.landrememberedrestaurant.com/",
             "busQuote": "Celebrating Florida with the finest local ingredients.",
             "membershipLevel": "Silver",
-            "logo": "https://www.landrememberedrestaurant.com/wp-content/uploads/2022/09/A-Land-Remembered-Steak-Plate-Shot.jpg"
+            "logo": "images/land-remembered-200.webp"
         },
         {
             "name": "Naked Bar Soap",
@@ -34,7 +34,7 @@
             "website": "https://www.nakedbarsoapco.com/",
             "busQuote": "Indulge in a sensual routine of daily self-care, mind, and body wellness.",
             "membershipLevel": "Silver",
-            "logo": "https://cdn.shopify.com/s/files/1/0642/0973/files/NakedBar_LogoLockUp_Black_f91ec33d-eb3b-40c4-8ee3-fee4990c9f65_600x.png?v=1622771798"
+            "logo": "images/nakedbarlogo.webp"
         },
         {
             "name": "Good Crowd",
@@ -43,7 +43,7 @@
             "website": "https://www.goodcrowdshop.com/",
             "busQuote": "Good gifts for great people!",
             "membershipLevel": "Bronze",
-            "logo": "https://www.goodcrowdshop.com/uploads/b/3936451deff0998eb050947bbe1fb6a34aa76b088fa337dd114f4bd6e1c97273/GoodCrowd_logo_final_color_1628643109.png?width=400"
+            "logo": "images/goodcrowdlogo.webp"
         },
         {
             "name": "Rifle Paper Co",
@@ -52,7 +52,7 @@
             "website": "https://riflepaperco.com",
             "busQuote": "Bold colors, painted florals, and whimsical characters",
             "membershipLevel": "Gold",
-            "logo": "https://sirv.riflepaperco.com/rpc/wysiwyg/OurStory-Products-textiles.jpg?scale.option=fill&scale.width=878&scale.height=1066&quality=60"
+            "logo": "images/riflepapercologo.webp"
         },
         {
             "name": "In Bloom Florist",
@@ -61,7 +61,7 @@
             "website": "https://www.inbloomflorist.com/",
             "busQuote": "Make each bouquet as individual as the feeling being sent",
             "membershipLevel": "NP",
-            "logo": "https://inbloomflorist.imgix.net/images/itemVariation/SummerCollection2022-6-22051932753.JPG?auto=format&w=285&h=342&fit=crop&dpr=2"
+            "logo": "images/inbloomlogo.webp"
         },
         {
             "name": "Antiques on the Avenue",
@@ -70,7 +70,7 @@
             "website": "https://www.antiquesonparkave.com/",
             "busQuote": "A truly high-end antique shop.",
             "membershipLevel": "NP",
-            "logo": "https://lirp.cdn-website.com/c1eee58609d746b8b806837902663a68/dms3rep/multi/opt/pic8-1920w.jpg"
+            "logo": "images/antiqueslogo.webp"
         },
         {
             "name": "Apenberry's",
@@ -79,7 +79,7 @@
             "website": "https://apenberrys.com/",
             "busQuote": "All things garden",
             "membershipLevel": "Silver",
-            "logo": "https://images.squarespace-cdn.com/content/v1/5e7dc2d9cc76e2321538fdca/1585329226491-JR7484OVGKVV1XWHIYF1/Apenberrys+logo-white+on+black.jpg?format=1500w"
+            "logo": "images/apenberryslogo.webp"
         }
     ]
 }

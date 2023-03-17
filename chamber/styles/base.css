@@ -642,6 +642,7 @@ form label.top input:required:valid {
 th, td {
 	padding: 7px 15px;
 	border: 1px solid black;
+    font-size:1rem;
 }
 .choose {
 	background-color: rgba(180, 231, 231,.2);
@@ -779,8 +780,7 @@ th, td {
     width: 90%;
     padding: 10px;
     border-radius: 5px;
-    border: none;
-    
+    border: none;    
   }
   
   .contact-form input {
@@ -789,6 +789,7 @@ th, td {
   
   .contact-form textarea {
     height: 170px;
+    border: 1px black solid;
   }
   
   .contact-form .submitBtn {
