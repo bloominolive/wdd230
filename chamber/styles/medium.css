@@ -55,16 +55,18 @@ header{
     
 }
 
-
-
-.business1 {
-    grid-area: business1;
-    margin-bottom: 1rem;
+.business-grid{
+   display: flex;
 }
 
-.business2 {
-    grid-area: business2;
-
+.business{
+    width: 50%;
+}
+.business1{
+    margin: 0 1rem;
+}
+.business2{
+    margin: 0 1rem;
 }
 
 .join {
