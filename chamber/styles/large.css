@@ -232,11 +232,13 @@ img:hover {
 
 .discover .sidebar {
     min-width: 300px;
+    padding: .5rem;
     
 }
 
 .discover .business {
     padding-bottom: 2.8rem;
+    margin: ;
     
 }
 
