@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDD 230 - Bountiful Foods | Rene Olive</title>
+    <meta name="description" content="Bountiful Foods final project website for Rene Olive in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" href="favicon_io/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="social-row">
+            <a class="socialicons" href="#"><img src="images/facebook-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+            <a class="socialicons" href="#"><img src="images/instagram-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+            <a class="socialicons" href="#"><img src="images/pinterest-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+        </div>        
+        <div class="header-container">
+            <a href="index.html"><picture class="headlogo">
+                <source media="(max-width: 337px)" srcset="images/bountifulfoodslogogreen-50.webp">
+                <source media="(max-width: 1028px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <source media="(max-width: 1200px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <img src="images/bountifulfoodslogogreen-200.webp" alt="logo">
+            </picture></a>
+            <section class="headings"><h1>Bountiful Foods</h1> 
+            </section> 
+        </div>        
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About</a></li>                 
+            </ul>
+    </nav>
+    <main class="fresh-page">
+        <h1 class="page-title">Build Something Fresh</h1>
+        <form method="get" action="thanks.html"> 
+        <fieldset>
+            <legend>Your Info</legend>
+            <label class="top" >Phone Number*<input id="phone-number" type="tel" name="phone" placeholder="1235551234" required></label>
+            <label class="top" >Email* <input id="email" type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top" >First Name* <input id="first-name" type="text" name="fname" required></label>                                
+        </fieldset>
+        <fieldset class="drink-build">
+            <legend>Mix It Good - Select 3 Ingredients</legend>
+            <div class="list" id="list1"></div>
+            <div class="list" id="list2"></div>
+            <div class="list" id="list3"></div>            
+        </fieldset>
+        <fieldset class="instructions">
+            <legend>Special Instructions</legend>
+            <label class="top">Instructions</label>          
+                <textarea id="special-instructions" class="textarea" name="bdescription" rows="4" cols="50"></textarea> 
+        </fieldset>        
+        <input type="button" value="Mix It Up Now!" id="submitBtn" class="submitBtn">
+        </form>
+        <div id="order"></div>
+        
+        </main>
+    <footer>
+        <div class="footertext">  
+            <a href="index.html"><picture class="footerlogo">
+                <source media="(max-width: 400px)" srcset="images/bountifulfoodslogogreen-200.webp">
+                <source media="(max-width: 1028px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <source media="(max-width: 1200px)" srcset="images/bountifulfoodslogogreen-50.webp">
+                <img src="images/bountifulfoodslogogreen-50.webp" alt="logo">
+            </picture></a>              
+                <section class="footerleft">
+                    <h2>Bountiful Foods</h2>
+                    <h4>3112 Lincoln St<br>
+                    Carlsbad, CA 92008</h4>                 
+                </section>
+            <section class="footerright">
+                <h4>freshbf@bountifulfoods.com <br>
+                    555.555.2121 <br>
+                    <a href="https://goo.gl/maps/pskX1CScXEiSNDDv6">
+                        <picture class="map-icon">
+                            <source media="(max-width: 400px)" srcset="images/mapsicon-36.webp">
+                            <source media="(max-width: 1028px)" srcset="images/mapsicon-36.webp">
+                            <source media="(max-width: 1200px)" srcset="images/mapsicon.webp">
+                            <img src="images/mapsicon.webp" alt="map icon" style="width: 2.5rem;">
+                        </picture>Map</a></h4>
+            </section>
+        </div>
+        <hr>
+        <p>&copy; <span id="curYr"></span> Bountiful Foods | Rene Olive | WDD 230</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/fresh.js"></script>
+</body>
+</html>

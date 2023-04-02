@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDD 230 - Chamber of Commerce Assignment | Rene Olive</title>
+    <meta name="description" content="Assignment portal for Rene Olive in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100;400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <picture class="headlogo">
+            <source media="(max-width: 656px)" srcset="images/orlando-city-logo50.webp">
+            <source media="(max-width: 1024px)" srcset="images/orlando-city-logo100.webp">
+            <source media="(min-width: 1023px)" srcset="images/orlando-city-logo200.webp">
+            <img src="images/orlando-city-logo50.webp" alt="logo">
+        </picture>
+        <section class="headings"><h1>Orlando Chamber of Commerce</h1> 
+            <div class="date"><p><span id="date"></span></p></div>
+        </section>
+        
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li> 
+                    <li class="socialicons"> <a href="#"><img src="images/facebook-icon.png" alt="facebook-logo" style="width: 2rem;"></a></li>
+                    <li class="socialicons"> <a href="#"><img src="images/instagram-icon.png" alt="instagram-logo" style="width: 2rem;"></a></li>                   
+                </ul>
+    </nav>
+    <main class="contact-page">
+        <h1 class="page-title">Contact The Chamber</h1>
+        <div class="contact-form-pic">
+            <div class="contact-picture">
+                <picture>
+                    <source media="(max-width: 574px)" srcset="images/contact-250.webp">
+                    <source media="(min-width: 575px) and (max-width: 1028px)" srcset="images/contact-350.webp">
+                    <source media="(max-width: 1200px)" srcset="images/contact-350.webp">
+                    <img class="contactpic" src="images/contact-350.webp" alt="contact picture">
+                </picture>
+            </div>
+            <div class="form-container">
+                <form class="contact-form" method="get" action="thanks-contact.html">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label class="top">Phone Number<input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required></label>    
+                        <label class="top">Message</label>          
+                            <textarea class="textarea" name="bdescription">Please enter your questions or comments here.</textarea> 
+                            <input type="submit" value="Send Message" class="submitBtn">
+                            <input type="hidden" name="formDate" id="formDate" value="">                 
+                    </fieldset>                    
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="visit-info">
+            <div class="visit-us">
+                <h2>Visit Us</h2>
+                <p class="visit-address">Orlando Chamber of Commerce<br>
+                400 South Orange<br>
+                Orlando, FL 32801</p>
+                <p class="visit-contact">info@orlandocc.org<br>407.246.2121</p>
+                <p class="visit-hours">Monday-Friday 9am-5pm</p>
+            </div>
+            <div class="vertical-divider"></div>
+                <hr class="visit-divider">
+                <div class="who-to-contact">
+                <h2>Who to Contact</h2>
+                <div class="who-to-contact-content">
+                    <p><b>Joe Orlando</b><br>President<br>407.555.5555 ext.123</p>
+                    <p><b>Jane Orange</b><br>Administrative Assistant<br>407.555.5555 ext.456</p>
+                    <p><b>Jack Florida</b><br>Membership Director<br>407.555.5555 ext.789</p>
+                    <p><b>Jenna Gator</b><br>Events Coordinator<br>407.555.5555 ext.001</p>
+                </div>
+            </div>
+        </div>
+        </main>
+    <footer>
+        <div class="footertext">  
+            <picture class="footerlogo">
+                <source media="(max-width: 400px)" srcset="images/orlando-city-logo200.webp">
+                <source media="(max-width: 1028px)" srcset="images/orlando-city-logo100.webp">
+                <source media="(max-width: 1200px)" srcset="images/orlando-city-logo50.webp">
+                <img src="images/orlando-city-logo50.webp" alt="logo">
+            </picture>              
+                <section class="footerleft">
+                    <h2>Orlando Chamber of Commerce</h2>
+                    <h4>400 South Orange  <br>
+                    Orlando, FL 32801</h4>                 
+                </section>
+            <section class="footerright">
+                <h4>info@orlandocc.org <br>
+                    407.246.2121 <br>
+                    <a href="https://maps.google.com/?q=400%20South%20Orange%20Avenue%20%20Orlando,%20FL%2032801">
+                        <picture class="map-icon">
+                            <source media="(max-width: 400px)" srcset="images/mapsicon36.png">
+                            <source media="(max-width: 1028px)" srcset="images/mapsicon36.png">
+                            <source media="(max-width: 1200px)" srcset="images/mapsicon.png">
+                            <img src="images/mapsicon.png" alt="map icon" style="width: 2.5rem;">
+                        </picture>Map</a></h4>
+            </section>
+        </div>
+       <hr>
+       <p>&copy; <span id="curYr"></span> Orlando Chamber | Rene Olive | WDD 230 | Last Modified <span id="docLastUpdated"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+    </body>
+</html>

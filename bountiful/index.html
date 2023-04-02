@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDD 230 - Bountiful Foods | Rene Olive</title>
+    <meta name="description" content="Bountiful Foods final project website for Rene Olive in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" href="favicon_io/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="social-row">
+            <a class="socialicons" href="#"><img src="images/facebook-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+            <a class="socialicons" href="#"><img src="images/instagram-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+            <a class="socialicons" href="#"><img src="images/pinterest-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+        </div>        
+        <div class="header-container">
+            <a href="index.html"><picture class="headlogo">
+                <source media="(max-width: 337px)" srcset="images/bountifulfoodslogogreen-50.webp">
+                <source media="(max-width: 1028px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <source media="(max-width: 1200px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <img src="images/bountifulfoodslogogreen-200.webp" alt="logo">
+            </picture></a>
+            <section class="headings"><h1>Bountiful Foods</h1> 
+            </section> 
+        </div>        
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About</a></li>                 
+                </ul>
+            </nav>
+    <main>
+        <div class="wrapper">
+            <div class="hero">
+                <picture >
+                    <source media="(max-width: 656px)" srcset="images/smoothie-hands-200.webp">
+                    <source media="(max-width: 1023px)" srcset="images/smoothie-hands-500.webp">
+                    <source media="(max-width: 1600px)" srcset="images/smoothie-hands-800.webp">
+                    <img class="heropic" src="images/smoothie-hands-800.webp" alt="hero picture">
+                </picture>
+                <a class="hero-button" href= "fresh.html">Get Fresh With Us</a>
+            </div>
+            <div class="location">
+                <h2 class="grid-headers">Come See Us</h2><hr class="grid-header-underline">
+                <div class="location-content">
+                    <div class="truck-location">
+                        <p>On the Road @<br>3176 Thorn Street<br> San Diego, CA 92104<br>
+                        On 4/8: 4:00 PM - 9:00 PM<br></p>
+                        <picture>
+                            <source media="(max-width: 656px)" srcset="images/smoothie-truck-50.webp">
+                            <source media="(max-width: 1023px)" srcset="images/smoothie-truck-75.webp">
+                            <source media="(max-width: 1600px)" srcset="images/smoothie-truck-75.webp">
+                            <img class="truck-pic" src="images/smoothie-truck-50.webp" alt="drinks pic picture">
+                        </picture>
+                    </div>
+                    <h4>OR</h4>
+                    <div class="store-location">
+                        <p>At our Store Location @<br>3112 Lincoln St<br>Carlsbad, CA 92008<br>Hours: 7am-9pm every day</p>
+                        <a href="https://goo.gl/maps/pskX1CScXEiSNDDv6">
+                            <picture class="map-icon">
+                                <source media="(max-width: 400px)" srcset="images/mapsicon-36.webp">
+                                <source media="(max-width: 1028px)" srcset="images/mapsicon-36.webp">
+                                <source media="(max-width: 1200px)" srcset="images/mapsicon.webp">
+                                <img src="images/mapsicon.webp" alt="map icon" style="width: 2.5rem;">
+                            </picture>Map</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="weather">
+                <h2 class="grid-headers">Carlsbad, CA</h2>
+                <div class="weather-temp-pic">
+                    <div class="sunshine"><img src="images/placeholder.png" alt="placeholder" id="weather-icon"></div>
+                    <h3><span id="current-temp"></span>°F</h3>
+                </div>
+                <div class="weather-details">
+                    <h3 class="wh3"><span id="weather-desc">Loading weather information...</span></h3>
+                    <hr>
+                    <div class="humidity"> Humidity: <span id="humidity"></span></div>
+                </div>
+                    <div class="forecast-grid" id="three-day-forecast"></div>                                
+            </div>
+            <div class="area-summary">
+                <h2 class="grid-headers">Drink. Explore. Repeat.</h2>
+                <p>Carlsbad has so much to explore after you get your drink from us! Between the 
+                    inspiring sculpture park, lively concerts, beautiful beaches that offer an exhilerating 
+                    variety of water sports, extensive trails, and more, you will find yourself getting immersed 
+                    in the world we love. Come have a drink from us, explore, and come back for more!</p>
+                     <p><a class="grid-buttons" href="https://www.carlsbadca.gov/residents">Explore!</a></p>
+                </div>           
+            <div class="drinks"> 
+                <h2 class="grid-headers">Your Drinks</h2>
+                <picture >
+                    <source media="(max-width: 656px)" srcset="images/smoothie-mix-200.webp">
+                    <source media="(max-width: 1023px)" srcset="images/smoothie-mix-500.webp">
+                    <source media="(max-width: 1600px)" srcset="images/smoothie-mix-500.webp">
+                    <img class="heropic" src="images/smoothie-mix-500.webp" alt="drinks pic picture">
+                </picture>
+                <p>You've submitted <span id="order-quantity"></span> sweet and unique drink orders!</p>
+                <p><a href="fresh.html" class="grid-buttons">Mix Now!</a></p>
+            </div> 
+            <div class="mix"> 
+                <h2 class="grid-headers">Mix It Up</h2> <br>
+                <picture >
+                    <source media="(max-width: 656px)" srcset="images/smoothie-girl-200.webp">
+                    <source media="(max-width: 1023px)" srcset="images/smoothie-girl-500.webp">
+                    <source media="(max-width: 1600px)" srcset="images/smoothie-girl-800.webp">
+                    <img class="mix-pic" src="images/smoothie-girl-200.webp" alt="hero picture">
+                </picture>
+                <p>Start on your unique and fresh drink recipe mix now!</p>
+                <p> <a href="fresh.html" class="grid-buttons">Mix Now!</a></p>
+            </div> 
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footertext">  
+            <a href="index.html"><picture class="footerlogo">
+                <source media="(max-width: 400px)" srcset="images/bountifulfoodslogogreen-200.webp">
+                <source media="(max-width: 1028px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <source media="(max-width: 1200px)" srcset="images/bountifulfoodslogogreen-50.webp">
+                <img src="images/bountifulfoodslogogreen-50.webp" alt="logo">
+            </picture></a>              
+                <section class="footerleft">
+                    <h2>Bountiful Foods</h2>
+                    <h4>3112 Lincoln St<br>
+                    Carlsbad, CA 92008</h4>                 
+                </section>
+            <section class="footerright">
+                <h4>freshbf@bountifulfoods.com <br>
+                    555.555.2121 <br>
+                    <a href="https://goo.gl/maps/pskX1CScXEiSNDDv6">
+                        <picture class="map-icon">
+                            <source media="(max-width: 400px)" srcset="images/mapsicon-36.webp">
+                            <source media="(max-width: 1028px)" srcset="images/mapsicon-36.webp">
+                            <source media="(max-width: 1200px)" srcset="images/mapsicon.webp">
+                            <img src="images/mapsicon.webp" alt="map icon" style="width: 2.5rem;">
+                        </picture>Map</a></h4>
+            </section>
+        </div>
+       <hr>
+       <p>&copy; <span id="curYr"></span> Bountiful Foods | Rene Olive | WDD 230</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/fresh.js"></script>   
+</body>
+</html>

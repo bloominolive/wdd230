@@ -1,0 +1,142 @@
+@media only screen and (min-width: 656px) and (max-width:1023px) {
+header{
+    display: flex;
+    flex-direction: row;
+}
+.headings {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+} 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-family: 'Merriweather', serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.hero {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    align-self: center;
+    width: 100%;
+}
+
+ .location {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location-content{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+.location-content p{
+    font-size: 1rem;
+}
+.location-content h4{
+    margin-top: 3rem;
+}
+.truck-location img{
+    margin-left: 2rem;
+}
+
+.grid-in-grid {
+    grid-area: spotlights; 
+    grid-template-areas: "business1 business2";
+    height: fit-content;
+    padding: 1rem .3rem 1rem .3rem;
+    
+}
+
+.forecast-grid{
+   display: flex;
+   margin-top: 2rem;
+}
+
+.business{
+    width: 50%;
+    display: none;
+}
+.business1{
+    margin: 0 1rem;
+}
+.business2{
+    margin: 0 1rem;
+}
+
+.drinks{
+    grid-row: 4/5;
+    grid-column: 3/5;
+}
+.mix {
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+.weather {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    
+} 
+
+.weather img {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.weather-temp-pic {
+    margin-left: 2rem;
+    margin-right: 3rem;
+} 
+.weather-details{
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+.forecast-day{
+    padding-bottom: 2rem;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+.area-summary {
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+
+.footertext {
+    display: flex;
+    flex-direction: row;
+    
+}
+footer img {
+    margin-top: -1.8rem;
+    margin-right: .8rem;
+}
+.footerleft {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.footerright {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    text-align: right;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    
+}
+    
+}  
+    

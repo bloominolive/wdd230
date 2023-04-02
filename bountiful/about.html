@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDD 230 - Bountiful Foods | Rene Olive</title>
+    <meta name="description" content="Bountiful Foods final project website for Rene Olive in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" href="favicon_io/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="social-row">
+            <a class="socialicons" href="#"><img src="images/facebook-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+            <a class="socialicons" href="#"><img src="images/instagram-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+            <a class="socialicons" href="#"><img src="images/pinterest-icon-yellow-green.webp" alt="facebook-logo" style="width: 2rem;"></a>
+        </div>        
+        <div class="header-container">
+            <a href="index.html"><picture class="headlogo">
+                <source media="(max-width: 337px)" srcset="images/bountifulfoodslogogreen-50.webp">
+                <source media="(max-width: 1028px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <source media="(max-width: 1200px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <img src="images/bountifulfoodslogogreen-200.webp" alt="logo">
+            </picture></a>
+            <section class="headings"><h1>Bountiful Foods</h1> 
+            </section> 
+        </div>        
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li class="active"><a href="about.html">About</a></li>                 
+            </ul>
+        </nav>
+    <main class="about-page">
+        <h1 class="page-title">About Us and Contact</h1>
+        <div class="visit-info">
+            <div class="visit-us">
+                <h2>Visit Us</h2>
+                <p class="visit-address">Come see our storefront!<br>
+                3112 Lincoln St<br>
+                Carlsbad, CA 92008</p>
+                <p class="visit-contact">freshbf@bountifulfoods.com<br>555.555.2121</p>
+                <p class="visit-hours">Every Day 7am-9pm</p>
+                <div class="visit-map">
+                    <a href="https://goo.gl/maps/1QX1GdBBTCwKkVo29"><img src="images/bountifulfoodsmap-300.webp" alt="map"></a>
+                </div>
+            </div>
+            <div class="vertical-divider"></div>
+                <hr class="visit-divider">
+                <div class="history-content">
+                <h2>Carlsbad History</h2>
+                <div class="history">
+                    <p>
+                        Carlsbad is a beautiful California coastal town with a cozy small town charm. "The Village By The Sea"
+                        was first settled by the Luiseno natives before the Spanish came in the 16th century. Mexico ended up
+                        owning it after their independence from Spain in 1821, and is 1882 Captain Frazier dug a well near the 
+                        coast where he offered water at the train station. He also found that the fresh-water wells there had water
+                        with a chemical similar to some of the most renowned spas in the world. The town was then named after the 
+                        famous spa in Bohemian town of Karlsbad. Now we enjoy a beautiful town with diverse people and great spots to
+                        explore. <br>
+                        <a href="https://www.carlsbadfoodtours.com/blog/destination-carlsbad-local-history/">
+                            Read more history here!</a>                      
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="visit-divider">
+            <div class="about-us-content">
+                <h2>About Us</h2>
+                <p>Bountiful Foods is a small business specializing in organic, locally grown foods. 
+                    We are physically located in Carlsbad, California, however, we have many food trucks 
+                    that cover the coastal area from Los Angeles to San Diego. We sells fruit and produce 
+                    directly from the farmers in the area, and also uses some national and international suppliers. 
+                    An owner-operated company, we cater to walk in traffic at our storefront in Carlsbad and, of course, 
+                    our food trucks. <b>Our mission is to 
+                    provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, 
+                    to the local population and to tourists visiting the coastal areas.</b></p>
+            </div>    
+        <div class="contact-form-pic">
+            <div class="contact-picture">
+                <picture>
+                    <source media="(max-width: 574px)" srcset="images/aboutushero-250.webp">
+                    <source media="(min-width: 575px) and (max-width: 1028px)" srcset="images/aboutushero-350.webp">
+                    <source media="(max-width: 1200px)" srcset="images/aboutushero-350.webp">
+                    <img class="contactpic" src="images/aboutushero-350.webp" alt="contact picture">
+                </picture>
+            </div>
+
+            <div class="form-container">
+                <form class="contact-form">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>                        <label class="top">Message</label>          
+                            <textarea class="textarea" name="bdescription">Please enter your questions or comments here.</textarea> 
+                            <input type="submit" value="Send Message" class="submitBtn">               
+                    </fieldset>                    
+                </form>
+            </div>
+        </div>
+        <hr>
+    </main>
+    <footer>
+        <div class="footertext">  
+            <a href="index.html"><picture class="footerlogo">
+                <source media="(max-width: 400px)" srcset="images/bountifulfoodslogogreen-200.webp">
+                <source media="(max-width: 1028px)" srcset="images/bountifulfoodslogogreen-100.webp">
+                <source media="(max-width: 1200px)" srcset="images/bountifulfoodslogogreen-50.webp">
+                <img src="images/bountifulfoodslogogreen-50.webp" alt="logo">
+            </picture></a>              
+                <section class="footerleft">
+                    <h2>Bountiful Foods</h2>
+                    <h4>3112 Lincoln St<br>
+                    Carlsbad, CA 92008</h4>                 
+                </section>
+            <section class="footerright">
+                <h4>freshbf@bountifulfoods.com <br>
+                    555.555.2121 <br>
+                    <a href="https://goo.gl/maps/pskX1CScXEiSNDDv6">
+                        <picture class="map-icon">
+                            <source media="(max-width: 400px)" srcset="images/mapsicon-36.webp">
+                            <source media="(max-width: 1028px)" srcset="images/mapsicon-36.webp">
+                            <source media="(max-width: 1200px)" srcset="images/mapsicon.webp">
+                            <img src="images/mapsicon.webp" alt="map icon" style="width: 2.5rem;">
+                        </picture>Map</a></h4>
+            </section>
+        </div>
+        <hr>
+        <p>&copy; <span id="curYr"></span> Bountiful Foods | Rene Olive | WDD 230</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
