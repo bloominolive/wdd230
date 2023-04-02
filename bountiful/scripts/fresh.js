@@ -41,16 +41,27 @@ button.addEventListener('click', function() {
   const firstName = document.getElementById('first-name').value;
   const email = document.getElementById('email').value;
   const phoneNumber =  document.getElementById('phone-number').value;
+  let orderHeading = document.createElement('h1');
+  orderHeading.textContent = `Your Order Summary`;
+  let orderDate = document.createElement('p');
+  let currentDate = new Date();
+  let formattedDate = currentDate.getDate() + '/' + (currentDate.getMonth() + 1) + '/' + currentDate.getFullYear();
+  orderDate.textContent = 'Order date: ' + formattedDate;
   let orderName = document.createElement('h2');
   orderName.textContent = `${firstName}`;
   let orderEmail = document.createElement('h3');
   orderEmail.textContent = `${email}`;
   let orderPhoneNumber = document.createElement('h3');
   orderPhoneNumber.textContent = `${phoneNumber}`;
+  let orderIngredientHeading = document.createElement('h4');
+  orderIngredientHeading.textContent = `${firstName}'s unique mix ingredients:`
 
+  order.appendChild(orderHeading);
+  order.appendChild(orderDate);
   order.appendChild(orderName);
   order.appendChild(orderEmail);
   order.appendChild(orderPhoneNumber);
+  order.appendChild(orderIngredientHeading);
 
 
   for (let selection of selectedFruits) {
@@ -77,15 +88,15 @@ button.addEventListener('click', function() {
   }
   
   let carbs = document.createElement('p');
-  carbs.textContent = `${totalCarbs}`;
+  carbs.textContent = `Total Carbs: ${totalCarbs.toFixed(2)}`;
   let protein = document.createElement('p');
-  protein.textContent = `${totalProtein}`;
+  protein.textContent = `Total Protein: ${totalProtein.toFixed(2)}`;
   let fat = document.createElement('p');
-  fat.textContent = `${totalFat}`;
+  fat.textContent = `Total Fat: ${totalFat.toFixed(2)}`;
   let sugar = document.createElement('p');
-  sugar.textContent = `${totalSugar}`;
+  sugar.textContent = `Total Sugar: ${totalSugar.toFixed(2)}`;
   let calories = document.createElement('p');
-  calories.textContent = `${totalCalories}`;
+  calories.textContent = `Total Calories: ${totalCalories.toFixed(2)}`;
 
   order.appendChild(carbs);
   order.appendChild(protein);
@@ -94,7 +105,7 @@ button.addEventListener('click', function() {
   order.appendChild(calories);
 
   let specialInstructions = document.createElement('h3');
-  specialInstructions.textContent = `${document.getElementById('special-instructions').value}`;  
+  specialInstructions.textContent = `Special instructions if any: ${document.getElementById('special-instructions').value}`;  
 
   order.appendChild(specialInstructions);
 
