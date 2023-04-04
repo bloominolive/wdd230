@@ -4,7 +4,7 @@ const currentHumidity = document.getElementById("humidity");
 const weatherDesc = document.getElementById('weather-desc');
 const threeDayForecast = document.getElementById("three-day-forecast");
 
-const url = 'http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&cnt=28&appid=396424175617be0512047c238150dea2';
+const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&cnt=28&appid=396424175617be0512047c238150dea2';
 
 async function apiFetch() {
   try {
