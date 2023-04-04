@@ -8,7 +8,7 @@ const url = 'http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=im
 
 async function apiFetch() {
   try {
-    const response = await fetch(url, { referrer: 'no-referrer-when-downgrade' });
+    const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
       console.log(data);
@@ -70,6 +70,4 @@ function displayForecast(forecastData) {
         }
     }
   }
-  
-
 apiFetch();
