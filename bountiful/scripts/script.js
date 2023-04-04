@@ -65,9 +65,12 @@ else {
     });
 }
 
+import { updateOrderQuantity } from './fresh.js';
 
-  const orderQuantitySpan = document.getElementById('order-quantity');
-  orderQuantitySpan.textContent = orderQuantity; 
+updateOrderQuantity();
+
+//   const orderQuantitySpan = document.getElementById('order-quantity');
+//   orderQuantitySpan.textContent = orderQuantity; 
 
 
 

@@ -112,18 +112,20 @@ button.addEventListener('click', function() {
 
   order.appendChild(specialInstructions);
 
+  function updateOrderQuantity() {
+    const cookieValue = document.cookie
+      .split('; ')
+      .find(row => row.startsWith('orderquantity='))
+      ?.split('=')[1];
   
-  const cookieValue = document.cookie
-  .split('; ')
-  .find(row => row.startsWith('orderquantity='))
-  ?.split('=')[1];
-
-  const orderQuantity = parseInt(cookieValue);
-
-  if (!isNaN(orderQuantity)) {
-    document.cookie = `orderquantity=${orderQuantity + 1}; path=/`;
-  } else {
-    document.cookie = `orderquantity=${1}; path=/`;
+    const orderQuantity = parseInt(cookieValue);
+  
+    if (!isNaN(orderQuantity)) {
+      document.cookie = `orderquantity=${orderQuantity + 1}; path=/`;
+    } else {
+      document.cookie = `orderquantity=${1}; path=/`;
+    }
   }
-
+  updateOrderQuantity();
 });
+export { updateOrderQuantity };
