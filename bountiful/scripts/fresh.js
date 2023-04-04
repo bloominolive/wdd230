@@ -41,6 +41,8 @@ button.addEventListener('click', function() {
   const firstName = document.getElementById('first-name').value;
   const email = document.getElementById('email').value;
   const phoneNumber =  document.getElementById('phone-number').value;
+  let orderThanks = document.createElement('h1');
+  orderThanks.textContent = `Thank you for your order!`;
   let orderHeading = document.createElement('h1');
   orderHeading.textContent = `Your Order Summary`;
   let orderDate = document.createElement('p');
@@ -56,6 +58,7 @@ button.addEventListener('click', function() {
   let orderIngredientHeading = document.createElement('h4');
   orderIngredientHeading.textContent = `${firstName}'s unique mix ingredients:`
 
+  order.appendChild(orderThanks);
   order.appendChild(orderHeading);
   order.appendChild(orderDate);
   order.appendChild(orderName);
