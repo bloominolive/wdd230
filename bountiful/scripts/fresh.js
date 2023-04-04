@@ -112,7 +112,6 @@ button.addEventListener('click', function() {
 
   order.appendChild(specialInstructions);
 
-  function updateOrderQuantity() {
     const cookieValue = document.cookie
       .split('; ')
       .find(row => row.startsWith('orderquantity='))
@@ -125,6 +124,4 @@ button.addEventListener('click', function() {
     } else {
       document.cookie = `orderquantity=${1}; path=/`;
     }
-  }
-});
-  export { updateOrderQuantity };
+  });

@@ -8,29 +8,6 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
 
-//Document last updated for footer
-var date = new Date();
-var year = date.getFullYear();
-document.querySelector("#curYr").innerHTML = year;
-let lastModified = new Date(document.lastModified);        
-document.getElementById("docLastUpdated").innerHTML = lastModified
-
-
-//loadcookie
-const cookieValue = document.cookie
-.split('; ')
-.find(row => row.startsWith('orderquantity='))
-?.split('=')[1];
-
-const orderQuantity = parseInt(cookieValue);
-
-// Check if the integer value was successfully retrieved from the cookie
-if (!isNaN(orderQuantity)) {
-    console.log(`The value of myInt is ${orderQuantity}`);
-} else {
-    console.log(`Where is the cookie?`);
-}
-
 //Lazy Loading
 const images = document.querySelectorAll("[data-srcset]");
 
@@ -65,17 +42,4 @@ else {
     });
 }
 
-import { updateOrderQuantity } from './fresh.js';
-
-updateOrderQuantity();
-
-const cookieValue = document.cookie
-  .split('; ')
-  .find(row => row.startsWith('orderquantity='))
-  ?.split('=')[1];
-
-const orderQuantity = parseInt(cookieValue);
-
-const orderQuantitySpan = document.getElementById('order-quantity');
-orderQuantitySpan.textContent = orderQuantity;
 

@@ -1,4 +1,6 @@
-
+body{
+    min-width: 400px;
+}
 header {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +49,7 @@ header .headlogo img {
 }
 header h1{
     font-family: 'Amatic SC', sans-serif;
-    font-size: 80px;
+    font-size: 4rem;
 }
 @media (max-width: 341px) {
     header {
@@ -131,9 +133,6 @@ nav ul.open {
     text-align: center;
     font-family: "Amatic SC", serif;
     color: #1D1D1D;
-}
-main {
-    max-width: 1800px;
 }
 .wrapper {
     display: grid;
@@ -496,8 +495,7 @@ form label.top input {
     border-radius: 4px;
     padding: .75rem;
     color: #1D1D1D;
-    width: 100%;
-    max-width: 20rem;
+    width: 90%;
     background-color: rgba(180, 231, 231,.4);
 }
 
@@ -542,11 +540,9 @@ th, td {
 	border: 1px solid black;
     font-size:1rem;
 }
-.instructions{
-    margin: 2rem;
-}
+
 .textarea{
-    max-width:90%;
+    width:90%;
 }
 
 #order{
