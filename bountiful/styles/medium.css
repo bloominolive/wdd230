@@ -15,8 +15,8 @@ header{
     gap: 2rem;
     margin-top: 2rem;
     font-family: 'Merriweather', serif;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero {
     grid-row: 1/2;
