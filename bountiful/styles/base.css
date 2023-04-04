@@ -351,6 +351,9 @@ hr {
 .drinks img:hover{
     transform: none;
 }
+.drink-order-text{
+    margin-top: 2rem;
+}
 .drinks p {
     color: #136f63;
     text-align: center;

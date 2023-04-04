@@ -53,6 +53,9 @@ grid-template-columns: 1fr 1fr 1fr;
     grid-row: 4/5;
     grid-column: 3/5;
 }
+.drink-order-text{
+    margin-top: 5rem;
+}
 .drinks img{
     margin-bottom: 3rem;
 }
