@@ -128,4 +128,4 @@ button.addEventListener('click', function() {
   }
   updateOrderQuantity();
 });
-export { updateOrderQuantity, orderQuantity };
+export { updateOrderQuantity};
