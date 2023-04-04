@@ -65,14 +65,9 @@ else {
     });
 }
 
-import { updateOrderQuantity, orderQuantity } from './fresh.js';
+import { updateOrderQuantity } from './fresh.js';
 
 updateOrderQuantity();
 
 const orderQuantitySpan = document.getElementById('order-quantity');
 orderQuantitySpan.textContent = orderQuantity;
-
-
-
-
-  
