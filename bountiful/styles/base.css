@@ -144,6 +144,7 @@ main {
     font-family: 'Josefin Sans', serif;
     margin-left: auto;
     margin-right: auto;
+    min-width: 400px;
 }
 .location {
     grid-row:2/3;
