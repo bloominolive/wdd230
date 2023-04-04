@@ -69,5 +69,13 @@ import { updateOrderQuantity } from './fresh.js';
 
 updateOrderQuantity();
 
+const cookieValue = document.cookie
+  .split('; ')
+  .find(row => row.startsWith('orderquantity='))
+  ?.split('=')[1];
+
+const orderQuantity = parseInt(cookieValue);
+
 const orderQuantitySpan = document.getElementById('order-quantity');
 orderQuantitySpan.textContent = orderQuantity;
+

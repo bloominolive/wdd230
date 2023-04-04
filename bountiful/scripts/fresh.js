@@ -126,6 +126,5 @@ button.addEventListener('click', function() {
       document.cookie = `orderquantity=${1}; path=/`;
     }
   }
-  updateOrderQuantity();
 });
-export { updateOrderQuantity};
+  export { updateOrderQuantity };
