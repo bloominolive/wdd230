@@ -134,7 +134,6 @@ nav ul.open {
 }
 main {
     max-width: 1800px;
-    margin: auto;
 }
 .wrapper {
     display: grid;
@@ -364,6 +363,7 @@ hr {
     padding: 1rem;
     background-color: #EBC825;
     box-shadow: rgba(29, 29, 29, .8) 2px 5px 8px;
+    text-align: center;
 }
 .mix h3{
     color: #136f63;
