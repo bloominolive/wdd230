@@ -19,7 +19,6 @@ header picture {
     margin-bottom: .5rem;
     display: inline-block;
 }
-
 header .headlogo img {
     border-radius: 100px;
 }
@@ -40,7 +39,6 @@ header .headlogo img {
 .socialicons img {
     border-radius: 25%;
 }
-
 .headings {
     display: flex;
     flex-direction: column;
@@ -200,7 +198,7 @@ nav ul.open {
 .grid-header-underline {
     border-radius: 250%;
 }
-.grid-buttons{
+.grid-buttons {
     border-radius: 10px;
     text-align: center;
     padding-left: 2rem;
@@ -473,21 +471,18 @@ form fieldset {
     border-radius: 25px;
     padding: .5rem 2%;
 }
-
 form legend {
     color: #1D1D1D;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 1.3rem;
 }
-
 form label.top, form div {
     display: block;
     padding-top: 1rem;
     color: #136f63;
     font-size: .9rem;
 }
-
 form label.top input {
     -webkit-appearance: none;
     display: block;
@@ -499,7 +494,6 @@ form label.top input {
     width: 90%;
     background-color: rgba(180, 231, 231,.4);
 }
-
 form label.sbs {
     display: block;
     padding: .75rem 0;
@@ -523,11 +517,9 @@ form input.submitBtn:hover {
     border: #D7213A solid 1px;
     transform: scale(1.1);
 }
-
 form label.top input:required {
     border-bottom: darkred solid 2px;
 }
-
 form label.top input:required:valid {
     border-bottom: darkgreen solid 2px;
 }
@@ -535,17 +527,14 @@ form label.top input:required:valid {
     display: inline-block;
     margin: 1rem;  
 }
-
 th, td {
 	padding: 7px 15px;
 	border: 1px solid black;
     font-size:1rem;
 }
-
 .textarea{
     width:90%;
 }
-
 #order{
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
@@ -587,12 +576,12 @@ th, td {
     width: 90%;
     max-width: 500px;
     margin: 1rem auto auto auto;    
-  }  
+}  
   .contact-form label {
     display: block;
     margin-bottom: 10px;
     max-width: 80%;
-  }  
+}  
   .contact-form input,
   .contact-form textarea {
     display: block;
@@ -600,14 +589,14 @@ th, td {
     padding: 10px;
     border-radius: 5px;
     border: none;    
-  }  
+}  
   .contact-form input {
     margin-bottom: 10px;
-  }  
+}  
   .contact-form textarea {
     height: 170px;
     border: 1px black solid;
-  }  
+}  
   .contact-form .submitBtn {
     display: block;
     margin: .8rem;
@@ -615,48 +604,48 @@ th, td {
     background-color: #136f63;
     color: #E5F9E0;
     font-family: "Josefin Sans", sans-serif;
-  }
+}
   .visit-info{
     text-align: center;
-  }
+}
   .visit-us h2{
     font-family: "Amatic SC", sans-serif;
     font-size: 36px;
-  }
+}
   .visit-map{
     margin-bottom: 1rem;
-  }
+}
   .visit-divider {
     width: 40%;
-  }
+}
   .history-content h2{
     font-family: "Amatic SC", sans-serif;
     font-size: 36px;
     margin-bottom: 0;
-  }
+}
   .history p{
     font-family: "Josefin Sans", sans-serif;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     line-height: 1.7rem;
-  }
+}
   .history a{
     color: #136f63;
-  }
+}
   .history a:hover{
     color: #D7213A;
     font-style: italic;
-  }
+}
   .about-us-content h2{
     font-family: "Amatic SC", sans-serif;
     font-size: 36px;
-  }
+}
   .about-us-content{
     text-align: center;
-  }
+}
   .about-us-content p{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     line-height: 1.7rem;
-  }
+}
   
