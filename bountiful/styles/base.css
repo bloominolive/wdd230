@@ -28,7 +28,7 @@ header .headlogo img {
     background-color: #FFBA08;
     border-top-right-radius: 180%;
     border-bottom-right-radius: 160%;
-    width: minmax(35%, 45%)
+    width: minmax(35%, 45%);
 }
 .socialicons {
     margin: 1rem;    
@@ -484,7 +484,6 @@ form label.top, form div {
     font-size: .9rem;
 }
 form label.top input {
-    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: 1px solid #999;
